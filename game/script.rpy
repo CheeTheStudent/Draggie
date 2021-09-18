@@ -1,12 +1,4 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
-
-
-# The game starts here.
+﻿# The game starts here.
 
 label start:
 
@@ -22,11 +14,21 @@ label start:
 
     show demon_king
 
-    # These display lines of dialogue.
+    mc "You've created a new Ren'Py game."
 
-    e "You've created a new Ren'Py game."
+    mc "Once you add a story, pictures, and music, you can release it to the world!"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    s "Let's go to chapter 1!"
+
+    # "call" directs users to the label, like "ch1_1" and when it's done,
+    # user comes back here. If you use "jump", user will not return to
+    # this file anymore.
+    
+    call ch1_1
+
+    call ch1_2
+
+    call ch2_1
 
     # This ends the game.
 

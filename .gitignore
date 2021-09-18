@@ -1,3 +1,6 @@
 traceback.txt
 log.txt
-error.txt
+errors.txt
+**.rpyc
+/game/saves/
+/game/cache
