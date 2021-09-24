@@ -254,12 +254,12 @@ screen quick_menu():
             yalign 1.0
 
             textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
+            # textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Save") action FileSave(1)
+            # textbutton _("Q.Save") action QuickSave()
+            # textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -303,13 +303,17 @@ screen navigation():
 
             textbutton _("Start") action Start()
 
+            # textbutton _("Continue") action ShowMenu("load")
+            textbutton _("Continue") action FileLoad(1)
+
+
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            # textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            # textbutton _("Save") action ShowMenu("save")
+            textbutton _("Save") action FileSave(1)
 
-        textbutton _("Load") action ShowMenu("load")
 
         textbutton _("Settings") action ShowMenu("preferences")
 
@@ -588,14 +592,14 @@ screen save():
 
     tag menu
 
-    use file_slots(_("Save"))
+    use game_menu("Pause")
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    # use file_slots(_("Load"))
 
 
 screen file_slots(title):

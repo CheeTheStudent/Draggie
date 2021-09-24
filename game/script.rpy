@@ -7,6 +7,8 @@ label start:
     # images directory to show it.
 
     scene forest
+    
+    show screen gameStats
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -14,11 +16,14 @@ label start:
 
     show demon_king
 
-    mc "You've created a new Ren'Py game."
+    # Prompts user to key in name
 
-    mc "Once you add a story, pictures, and music, you can release it to the world!"
+    python:
+        player_name = renpy.input("Enter your name?", length=32)
+        player_name = player_name.strip()
 
-    s "Let's go to chapter 1!"
+        if not player_name:
+            player_name = "Ren"
 
     # "call" directs users to the label, like "ch1_1" and when it's done,
     # user comes back here. If you use "jump", user will not return to
