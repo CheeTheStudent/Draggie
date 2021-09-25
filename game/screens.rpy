@@ -194,6 +194,7 @@ style input_prompt:
 style input:
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
+    color "#8c8"
 
 
 ## Choice screen ###############################################################

@@ -33,13 +33,32 @@ label ch1_1:
 
   "The battle finally ended when the dragons and the Demon King mysteriously disappeared."
    
-  "Now, this is all that people recall from the _____ (incident, accident)."
+  menu:
+    "Now, this is all that people recall from the _____ ."
+
+    "incident":
+      $ renpy.fix_rollback()
+      $ scores += 10
+    
+    "accident":
+      $ renpy.fix_rollback()
 
   "[mc] finds [himself] facing two blurry unfamiliar figures in the fog."
 
   "They are casting some sort of spell on [him]."
 
-  "The things they are _____ (said, saying, says) are hard to make out except for a few words."
+  menu:
+    "The things they are _____ are hard to make out except for a few words."
+
+    "said":
+      $renpy.fix_rollback()
+
+    "saying":
+      $renpy.fix_rollback()
+      $ scores += 10
+
+    "says":
+      $renpy.fix_rollback()
 
   "Mysterious Voice" "{i}Beware of the black flame...{/i}"
 
@@ -47,7 +66,17 @@ label ch1_1:
 
   mc "{i}Gosh, that was a weird dream!{/i}"
 
-  "It’s broad daylight and the sun is _____ (shining, sparkling, sprinkling) through the windows of [mc]’s room."
+  menu:
+
+    "It’s broad daylight and the sun is _____ through the windows of [mc]’s room."
+
+    "shining":
+      $renpy.fix_rollback()
+      $ scores += 10
+    "sparkling":
+      $renpy.fix_rollback()
+    "sprinkling":
+      $renpy.fix_rollback()
 
   mc "{i}What a lovely day, I guess I better start getting dressed for breakfast with grandma.{/i}"
 
@@ -61,7 +90,16 @@ label ch1_1:
 
   "[mc] goes around the house, looking for [his] grandma."
 
-  mc "Grandma, where _____ (is, are, was) you?"
+  menu:
+    mc "Grandma, where _____ you?"
+
+    "is":
+      $renpy.fix_rollback()
+    "are":
+      $renpy.fix_rollback()
+      $ scores += 10
+    "was":
+      $renpy.fix_rollback()
 
   "[He] looks for grandma all over the house and eventually finds her lying still on the bed."
 
@@ -109,5 +147,14 @@ label ch1_1:
 
   label ch1_grandma_cont:
 
-    "Grandma finally _____ (broken, breaks, breaking) the silence and starts speaking to [him]."
+    menu:
+      "Grandma finally _____ the silence and starts speaking to [him]."
+
+      "broken":
+        $renpy.fix_rollback()
+      "breaks":
+        $renpy.fix_rollback()
+        $ scores += 10
+      "breaking":
+        $renpy.fix_rollback()
 
