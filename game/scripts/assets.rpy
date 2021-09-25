@@ -3,6 +3,7 @@
 
 ###########     CHARACTERS      ###########
 define mc = Character("[player_name]", who_color="#92fcfb")
+define gm = Character("Grandma")
 define s = Character("Salazar")
 define gm = Character("Guild Master")
 
@@ -11,3 +12,10 @@ define gm = Character("Guild Master")
 
 ###########     VARIABLES     ###########
 default scores = 0
+
+default he = "he"
+default his = "his"
+default him = "him"
+default himself = "himself"
+default He = "He"
+default His = "His"
