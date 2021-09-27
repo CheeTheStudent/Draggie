@@ -36,6 +36,8 @@ label start:
             $ himself = "herself"
             $ He = "She"
             $ His = "Her"
+            $ boy = "girl"
+            $ Boy = "Girl"
 
         "Male":
             pass
