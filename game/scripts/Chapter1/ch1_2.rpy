@@ -16,35 +16,31 @@ label ch1_2:
 
   gm "That baby [boy] was you, [mc]. You’re the best grandchild I could ever ask for."
 
-  gm "Your mother left you a letter before she left.”
+  gm "Your mother left you a letter before she left."
 
   "She places a folded letter onto the palm of your hand."
 
-  gm "It’s time for you to take care of yourself, [mc].”
+  gm "It’s time for you to take care of yourself, [mc]."
 
   gm "You will face many challenges ahead… so make good friends and you won’t have to face them alone."
 
-  menu:
-
-    gm "I believe you will _____ (can, be, shall) able to survive just fine without me, my dear boy."
+  gm "I believe you will _____ (can, be, shall) able to survive just fine without me, my dear boy."
 
   "Grandma closes her eye and you feels her pulse beating slowly to a stop."
 
   "Your eyes fill up with tears, trying to process what happened."
 
-  menu:
+  "For the first time in a long time, you start _____ (balling, bawling)."
 
-    "For the first time in a long time, you start _____ (balling, bawling)."
-
-  "~~time passes~~'
+  "~~time passes~~"
 
   "A couple of weeks have passed since the death of your grandma."
 
-  "A couple of weeks have passed since the death of your grandma."
-
-  "You have been sheltered by his grandma for the majority of his life."
+  "You have been sheltered by grandma for the majority of your life."
 
   "You have now decided to get out of your comfort zone and explore the city to gain new knowledge and experience."
+
+  "You live in the mountains. In order to _____ (venturing, venture) into the city, you need to cross a forest."
 
   "The journey to the city was not an easy task. As you approach the final leg of the journey, you encounter a demon that tries to harm you."  
 
@@ -54,11 +50,9 @@ label ch1_2:
 
   "Suddenly, the demon starts running towards you."
 
-  menu:
+  "You brace yourself for the _____ (impact, affect, effect), holding up your hands and closing your eyes."
 
-    "You brace yourself for the _____ (impact, affect, effect), holding up your hands and closing your eyes."
-
-  "But the impact never came."
+  "But the impact never comes."
 
   "Confused, you open your eyes and find the demon lying on the ground, defeated."
 
@@ -72,10 +66,8 @@ label ch1_2:
 
   "You lower your hands and watch the force field disappear."
 
-  menu:
+  "You slowly come to the _____ (realization, realizing, reality) that as crazy as it is, you have supernatural powers!"
 
-    "You slowly come to the _____ (realization, realizing, reality) that as crazy as it is, you have supernatural powers!"
-
-    mc "{i}That is awesome!{/i}"
+  mc "{i}That is awesome!{/i}"
 
   "With the help of the force field, you manage to defeat the demon and continue your journey to the city."

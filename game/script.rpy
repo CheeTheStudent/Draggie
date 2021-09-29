@@ -2,20 +2,6 @@
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene forest
-    
-    show screen gameStats
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show demon_king
-
     # Prompts user to key in name
 
     python:
@@ -47,10 +33,13 @@ label start:
     # user comes back here. If you use "jump", user will not return to
     # this file anymore.
     
+    call chapter_splash_screen(1)
+    show screen gameStats
     call ch1_1
-
     call ch1_2
 
+    call chapter_splash_screen(2)
+    show screen gameStats
     call ch2_1
 
     # This ends the game.

@@ -3,9 +3,8 @@
 
 ###########     CHARACTERS      ###########
 define mc = Character("[player_name]", who_color="#92fcfb")
-define gm = Character("Grandma")
+define gm = Character("Grandma", who_color="e0ab2f")
 define s = Character("Salazar")
-define gm = Character("Guild Master")
 
 ###########     BACKGROUNDS     ###########
 
@@ -19,3 +18,5 @@ default him = "him"
 default himself = "himself"
 default He = "He"
 default His = "His"
+default boy = "boy"
+default Boy = "Boy"

@@ -3,9 +3,11 @@
 
 label ch1_1:
 
+  scene burning_village
+
   menu:
 
-    "10 years ago when [mc] was 3 years old, a demon king was ___________ into the world."
+    "10 years ago, a demon king was ___________ into the world."
 
     "birth":
 
@@ -43,9 +45,15 @@ label ch1_1:
     "accident":
       $ renpy.fix_rollback()
 
-  "[mc] finds [himself] facing two blurry unfamiliar figures in the fog."
+  scene black
+  with Pause(1)
 
-  "They are casting some sort of spell on [him]."
+  "You find yourself facing two blurry unfamiliar figures in the fog."
+
+  scene misty_parents
+  with dissolve
+
+  "They are casting some sort of spell on you."
 
   menu:
     "The things they are _____ are hard to make out except for a few words."
@@ -62,13 +70,15 @@ label ch1_1:
 
   "Mysterious Voice" "{i}Beware of the black flame...{/i}"
 
-  "Suddenly, [mc] wakes up and realizes it was all a dream."
+  "Suddenly, you wake up and realize it was all a dream."
+
+  scene bedroom
 
   mc "{i}Gosh, that was a weird dream!{/i}"
 
   menu:
 
-    "It’s broad daylight and the sun is _____ through the windows of [mc]’s room."
+    "It’s broad daylight and the sun is _____ through the windows of your room."
 
     "shining":
       $renpy.fix_rollback()
@@ -80,15 +90,17 @@ label ch1_1:
 
   mc "{i}What a lovely day, I guess I better start getting dressed for breakfast with grandma.{/i}"
 
-  "[mc] makes [his] way downstairs towards the dining area to have breakfast but notices the empty table."
+  scene kitchen
+
+  "You make your way downstairs towards the dining area to have breakfast but notice the empty table."
 
   mc "{i}That’s odd… I wonder where grandma is...{/i}"
 
-  "[mc] has been living with [his] grandma for as long as [he] can remember."
+  "You have been living with grandma for as long as you can remember."
 
-  "She is usually awake before sunrise and she prepares breakfast for [mc]."
+  "She is usually awake before sunrise and she prepares breakfast for you."
 
-  "[mc] goes around the house, looking for [his] grandma."
+  "You go around the house, looking for your grandma."
 
   menu:
     mc "Grandma, where _____ you?"
@@ -101,13 +113,13 @@ label ch1_1:
     "was":
       $renpy.fix_rollback()
 
-  "[He] looks for grandma all over the house and eventually finds her lying still on the bed."
+  "You look for grandma all over the house and eventually find her lying still on the bed."
 
   mc "Grandma, are you okay… do you need help?"
 
   menu:
 
-    "Grandma chooses to ignore the question and instead, gestures for [mc] to come closer."
+    "Grandma chooses to ignore the question and instead, gestures for you to come closer."
 
     "Go closer":
 
@@ -119,13 +131,13 @@ label ch1_1:
 
   label ch1_care_for_grandma:
 
-    "[He] goes closer to grandma."
+    "You go closer to grandma."
 
     mc "How can I help you grandma?"
 
     mc "{i}What happened to grandma today?{/i}"
 
-    "[mc] walks towards grandma's bed."
+    "You walk towards grandma's bed."
 
     jump ch1_grandma_cont
 
@@ -133,13 +145,13 @@ label ch1_1:
 
     mc "Later, grandma. I’m going to prepare breakfast now. You can stay in bed."
 
-    "[He] turns to walk away."
+    "You turn to walk away."
 
     "Suddenly, grandma starts coughing badly."
 
     mc "{i}Something is wrong with grandma…{/i}"
 
-    "[mc] rushes close to grandma's bed."
+    "You rush close to grandma's bed."
 
     mc "Grandma, are you okay?"
 
@@ -148,7 +160,7 @@ label ch1_1:
   label ch1_grandma_cont:
 
     menu:
-      "Grandma finally _____ the silence and starts speaking to [him]."
+      "Grandma finally _____ the silence and starts speaking to you."
 
       "broken":
         $renpy.fix_rollback()
