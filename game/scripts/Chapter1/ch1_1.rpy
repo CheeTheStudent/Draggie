@@ -7,7 +7,7 @@ label ch1_1:
 
   menu:
 
-    "10 years ago, a demon king was ___________ into the world."
+    "10 years ago, a demon king was _____ into the world."
 
     "birth":
 

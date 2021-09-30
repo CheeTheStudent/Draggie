@@ -24,13 +24,31 @@ label ch1_2:
 
   gm "You will face many challenges ahead… so make good friends and you won’t have to face them alone."
 
-  gm "I believe you will _____ (can, be, shall) able to survive just fine without me, my dear boy."
+  menu:
+      gm "I believe you will _____ able to survive just fine without me, my dear boy."
+
+      "can":
+        $renpy.fix_rollback()
+      "be":
+        $renpy.fix_rollback()
+        $ scores += 10
+      "shall":
+        $renpy.fix_rollback()
+
 
   "Grandma closes her eye and you feels her pulse beating slowly to a stop."
 
   "Your eyes fill up with tears, trying to process what happened."
 
-  "For the first time in a long time, you start _____ (balling, bawling)."
+  menu:
+      "For the first time in a long time, you start _____."
+
+      "balling":
+        $renpy.fix_rollback()
+      "bawling":
+        $renpy.fix_rollback()
+        $ scores += 10
+
 
   "~~time passes~~"
 
@@ -40,7 +58,15 @@ label ch1_2:
 
   "You have now decided to get out of your comfort zone and explore the city to gain new knowledge and experience."
 
-  "You live in the mountains. In order to _____ (venturing, venture) into the city, you need to cross a forest."
+  menu:
+      "You live in the mountains. In order to _____ into the city, you need to cross a forest."
+
+      "venture":
+        $renpy.fix_rollback()
+      "venturing":
+        $renpy.fix_rollback()
+        $ scores += 10
+
 
   "The journey to the city was not an easy task. As you approach the final leg of the journey, you encounter a demon that tries to harm you."  
 
@@ -50,7 +76,17 @@ label ch1_2:
 
   "Suddenly, the demon starts running towards you."
 
-  "You brace yourself for the _____ (impact, affect, effect), holding up your hands and closing your eyes."
+  menu:
+      "You brace yourself for the _____, holding up your hands and closing your eyes."
+
+      "affect":
+        $renpy.fix_rollback()
+      "effect":
+        $renpy.fix_rollback()
+      "impact":
+        $renpy.fix_rollback()
+        $ scores += 10
+
 
   "But the impact never comes."
 
@@ -66,7 +102,17 @@ label ch1_2:
 
   "You lower your hands and watch the force field disappear."
 
-  "You slowly come to the _____ (realization, realizing, reality) that as crazy as it is, you have supernatural powers!"
+  menu:
+      "You slowly come to the _____ that as crazy as it is, you have supernatural powers!"
+
+      "realization":
+        $renpy.fix_rollback()
+        $ scores += 10
+      "realizing":
+        $renpy.fix_rollback()
+      "reality":
+        $renpy.fix_rollback()
+
 
   mc "{i}That is awesome!{/i}"
 
