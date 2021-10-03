@@ -8,6 +8,7 @@ image chapter_title = ParameterizedText(style="chapter_title_style")
 label chapter_splash_screen(chap):
 
   scene black
+  with dissolve
   with Pause(1)
 
   show chapter_title "Chapter [chap]" at truecenter

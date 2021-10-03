@@ -50,7 +50,7 @@ label ch1_2:
         $ scores += 10
 
 
-  "~~time passes~~"
+  call scene_transition_title('Time passes..')
 
   "A couple of weeks have passed since the death of your grandma."
 

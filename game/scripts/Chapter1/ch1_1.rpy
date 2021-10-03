@@ -45,8 +45,7 @@ label ch1_1:
     "accident":
       $ renpy.fix_rollback()
 
-  scene black
-  with Pause(1)
+  call scene_transition_title('Present day')
 
   "You find yourself facing two blurry unfamiliar figures in the fog."
 
