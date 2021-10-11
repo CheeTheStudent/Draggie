@@ -51,6 +51,11 @@ label ch1_2:
 
 
   call scene_transition_title('Time passes..')
+  
+
+  play sound "audio/WaterFlow.mp3"
+  scene home
+  with dissolve
 
   "A couple of weeks have passed since the death of your grandma."
 
@@ -66,15 +71,24 @@ label ch1_2:
       "venturing":
         $renpy.fix_rollback()
         $ scores += 10
-
+  
+  stop sound
+  
+  scene goblin
+  with dissolve
 
   "The journey to the city was not an easy task. As you approach the final leg of the journey, you encounter a demon that tries to harm you."  
+  play sound "audio/GoblinLaugh.mp3"
 
   mc "{i}How am I going to fight this demon?{/i}"
 
   mc "{i}I never fought anyone before... And I’m no match for the demon’s speed.{/i}"
 
   "Suddenly, the demon starts running towards you."
+
+  
+  scene powercharge
+  with dissolve
 
   menu:
       "You brace yourself for the _____, holding up your hands and closing your eyes."

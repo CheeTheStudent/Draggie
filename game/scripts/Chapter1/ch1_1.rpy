@@ -4,6 +4,7 @@
 label ch1_1:
 
   scene burning_village
+  play sound "audio/fire.mp3"
 
   menu:
 
@@ -72,6 +73,8 @@ label ch1_1:
   "Suddenly, you wake up and realize it was all a dream."
 
   scene bedroom
+  play sound "audio/BirdsChirpSound.mp3"
+
 
   mc "{i}Gosh, that was a weird dream!{/i}"
 
@@ -89,14 +92,16 @@ label ch1_1:
 
   mc "{i}What a lovely day, I guess I better start getting dressed for breakfast with grandma.{/i}"
 
+  stop sound
   scene kitchen
 
   "You make your way downstairs towards the dining area to have breakfast but notice the empty table."
-
+  
+  play sound "audio/DoorSqueak.mp3"
   mc "{i}That’s odd… I wonder where grandma is...{/i}"
 
   "You have been living with grandma for as long as you can remember."
-
+  stop sound
   "She is usually awake before sunrise and she prepares breakfast for you."
 
   "You go around the house, looking for your grandma."
@@ -114,6 +119,7 @@ label ch1_1:
 
   "You look for grandma all over the house and eventually find her lying still on the bed."
 
+   
   mc "Grandma, are you okay… do you need help?"
 
   menu:
