@@ -1,5 +1,6 @@
 # We can divide each chapter into a few sections based on each scene.
 #This scene will be the MC's dream and finding out about MC's grandma.
+define g = Character("Grandma") 
 
 label ch1_1:
 
@@ -119,11 +120,14 @@ label ch1_1:
 
   "You look for grandma all over the house and eventually find her lying still on the bed."
 
-   
+  show grandma neutral
+  pause (2.0)
   mc "Grandma, are you okay… do you need help?"
 
-  menu:
-
+  show grandma lookaway at left
+  with move 
+  pause (3.0)
+  menu: 
     "Grandma chooses to ignore the question and instead, gestures for you to come closer."
 
     "Go closer":
