@@ -2,7 +2,7 @@ label ch1_2:
 
   gm "[mc]… I’m sorry I kept this from you all these years."
 
-  gm "I never wanted to hurt you… I loved you like my own grandchild."
+  gm "I never wanted to hurt you… I love you like my own grandchild."
 
   mc "... Grandma? What’s going on? What do you mean?"
 
@@ -14,7 +14,7 @@ label ch1_2:
 
   "She smiles at you."
 
-  gm "That baby [boy] was you, [mc]. You’re the best grandchild I could ever ask for."
+  gm "That baby [boy] was you, [mc]. You are the best grandchild I could ever ask for."
 
   gm "Your mother left you a letter before she left."
 
@@ -34,7 +34,6 @@ label ch1_2:
         $ scores += 10
       "shall":
         $renpy.fix_rollback()
-
 
   "Grandma closes her eye and you feels her pulse beating slowly to a stop."
 
@@ -108,7 +107,7 @@ label ch1_2:
 
   mc "{i}What is going on, how am I alive?{/i}"
 
-  "You realize a force field shining brightly around you."
+  "You realize a force field is shining brightly around you."
 
   mc "{i}The force field protected me… Not only that, it even reflected the demon’s attack!{/i}"
 

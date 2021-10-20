@@ -2,13 +2,29 @@ label ch2_1:
 
     "You breathe a sigh of relief as soon as you set foot in the town of Olympus."
 
-    "The town is bustling with people, some even  giving you curious looks as they walk by."
+    menu:
+        "The town is bustling with people, some even _____ you curious looks as they walk by."
+    
+        "gave":
+            $renpy.fix_rollback()
+        "giving":
+            $renpy.fix_rollback()
+            $ scores += 10
+        "given":
+            $renpy.fix_rollback()
 
     "You realize that your body reeks from skipping out on showers during your walk to Olympus."
 
     mc "{i}*Sigh* I can’t continue my journey like this.{/i}"
 
-    mc "{i}I should find a place to freshen up and rest for the night.{/i}"
+    menu:
+        mc "{i}I should find a place to _____ up and rest for the night.{/i}"
+
+        "freshen":
+            $renpy.fix_rollback()
+            $ scores += 10
+        "brighten":
+            $renpy.fix_rollback()
 
     "You walk around the unfamiliar town looking for a place to stay."
 
@@ -27,7 +43,15 @@ label ch2_1:
 
     label  ch2_be_polite_to_stranger:
 
-        "Stunned, you then asked the stranger, “How can I help you?”"
+        menu:
+            "Stunned, you then _____ the stranger, “How can I help you?”"
+
+            "ask":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "asked":
+                $renpy.fix_rollback()
+            
 
         sg "Hehe, this way, follow me. I’ll lead you. *still grinning*"
 
@@ -35,21 +59,48 @@ label ch2_1:
 
         sg "I know an inn, where you can take a rest for the day. I can tell that you must be exhausted."
 
-        "Knowing that you will never find a place out here on your own, you decide to take up the offer before the stranger leaves."
+        menu:
+            "Knowing that you will never find a place out _____ on your own, you decide to take up the offer before the stranger leaves."
+        
+            "there":
+                $renpy.fix_rollback()
+            "where":
+                $renpy.fix_rollback()
+            "here":
+                $renpy.fix_rollback()
+                $ scores += 10
 
-        mc "{i}I am hungry too… and I definitely need a shower badly.{/i}*you think to yourself*"
+        mc "{i}I am hungry too… and I definitely need a shower badly.{/i}*you think to yourself.*"
 
         mc "Can I follow you to the inn?"
 
         sg "Of course, let’s go. I’ll lead the way and you try to keep up, alright?"
 
-        "You nodded in agreement"
+        menu:
+            "You _____ in agreement."
+
+            "nod":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "nodded":
+                $renpy.fix_rollback()
+            "nods":
+                $renpy.fix_rollback()
 
         jump ch2_polite_cont
 
     label  ch2_be_hostile_towards_stranger:
 
-        "You are frightened and compelled to hit the stranger."
+        menu:
+            "You are frightened _____ compelled to hit the stranger."
+
+            "not":
+                $renpy.fix_rollback()
+            "and":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "or":
+                $renpy.fix_rollback()
 
         "“Woah!” The stranger steps back."
 
@@ -59,21 +110,48 @@ label ch2_1:
 
         "The stranger takes off the mask."
 
-        sg  "Relax. I’m here to help you. You probably need to go to an inn to tidy up yourself, right? I can lead you there."
+        menu:
+            sg  "Relax. I’m here to help you. You probably need to go to an inn to tidy up yourself, right? I can lead you ______."
+
+            "where":
+                $renpy.fix_rollback()
+            "here":
+                $renpy.fix_rollback()
+            "there":
+                $renpy.fix_rollback()
+                $ scores += 10
 
         "You are still on guard against him."
 
         sg "*Sigh* Alright, I’ll lead you to the inn. You follow behind me, okay?"
 
-        "You nodded in aggrement."
+        menu:
+            "You _____ in agreement."
+
+            "nod":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "nodded":
+                $renpy.fix_rollback()
+            "nods":
+                $renpy.fix_rollback()
 
         "You follow behind the stranger and walk into the crowd."
 
         jump ch2_hostile_cont
 
     label ch2_polite_cont:
+        
+        menu:
+            "On the way to the inn, you take a short break to quench your thirst. When you _____ up, the stranger is gone from your sight."
 
-        "On the way to the inn, you take a short break to quench your thirst. When you looked up, the stranger is gone from your sight."
+            "look":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "looked":
+                $renpy.fix_rollback()
+            "looking":
+                $renpy.fix_rollback()
 
         mc "{i} Hey... Are you there?{/i}"
 
@@ -83,9 +161,16 @@ label ch2_1:
 
         "After circling the area, you find a hint of *Colour of Stranger’s hair* at the back of a rock."
 
-        "The stranger quietly creeps up closer and scares you from the back."
+        menu:
+            "The stranger quietly creeps up _____ and scares you from the back."
 
-        mc "You really got me there, I almost fell for it, you laugh."
+            "further":
+                $renpy.fix_rollback()
+            "closer":
+                $renpy.fix_rollback()
+                $ scores += 10
+
+        mc "You really got me there, I almost fell for it!"
 
         "You both share a good laugh."
 
@@ -103,7 +188,16 @@ label ch2_1:
 
         mc "Hey…. Are you there?"
 
-        "No one replied and you are disappointed."
+        menu:
+            "No one ______ and you are disappointed."
+
+            "replied":
+                $renpy.fix_rollback()
+            "reply":
+                $renpy.fix_rollback()
+            "replies":
+                $renpy.fix_rollback()
+                $ scores += 10
 
         mc "* Sigh * {i}Where is he? Maybe I’ll just walk down this road and find the inn on my own.{/i}"
 
@@ -119,9 +213,7 @@ label ch2_1:
 
         mc "Are you serious now?"
 
-        sg "Yeah! I’m serious. Believe me"
-
-        "The stranger responds"
+        sg "Yeah! I’m serious. Believe me."
 
         "You smile, believe him and follow him."
 
@@ -135,11 +227,29 @@ label ch2_1:
 
         "On the way to the inn, the stranger introduces himself as Darrick to you. He also questions your appearance."
 
-        "Looking all embarrassed, you mention your encounter with the demon on your way to Olympus to Darrick."
+        menu:
+            "Looking all embarrassed, you mention your encounter with the demon on _____ way to Olympus to Darrick."
+
+            "my":
+                $renpy.fix_rollback()
+            "our":
+                $renpy.fix_rollback()
+            "your":
+                $renpy.fix_rollback()
+                $ scores += 10
 
         "You also explain that you have no clue how you defeated the demon with the force field."
 
-        "As you two approach the inn, Darrick urges you to take a shower while he waits at the cafeteria."
+        menu:
+            "As you two approach the inn, Darrick urges you to take a shower while he _____ at the cafeteria."
+
+            "waits":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "wait":
+                $renpy.fix_rollback()
+            "waited":
+                $renpy.fix_rollback()
 
         "Darrick also helps you out with the payment for the inn and tells you not to not worry about it."
 
@@ -147,7 +257,14 @@ label ch2_1:
 
         "You then continue the conversation from where it was left off earlier."
 
-        "After you describe the demon that you  encountered in the forest, Derrick explains to you that the demon you fought was a goblin."
+        menu:
+            "After you describe the demon that you _____ in the forest, Derrick explains to you that the demon you fought was a goblin."
+
+            "incanted":
+                $renpy.fix_rollback()
+            "encountered":
+                $renpy.fix_rollback()
+                $ scores += 10
 
         "Darrick then raises his hand and produces a force field around it similar to what you experienced."
 
@@ -155,11 +272,29 @@ label ch2_1:
 
         "However, you notice the force field you encountered had a red tint to it as compared to the blue tint of Derrick’s force field."
 
-        "You brought that thought up to Darrick."
+        menu:
+            "You _____ that thought up to Darrick."
+
+            "brought":
+                $renpy.fix_rollback()
+            "bring":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "bought":
+                $renpy.fix_rollback()
 
         "Darrick seemed to be unfamiliar with that occurrence but he suggests that he should introduce you to the Guild Master."
 
-        "By doing so he hopes that the Guild Master will have an answer to their doubts."
+        menu:
+            "By doing so he hopes that the Guild Master will have an answer to _____ doubts."
+
+            "their":
+                $renpy.fix_rollback()
+            "your":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "our":
+                $renpy.fix_rollback()
 
     menu:
 
@@ -175,19 +310,36 @@ label ch2_1:
 
         "“When will we leave to meet the Master?” you ask in excitement. “Do we leave now?” you add."
 
-        dr "We will leave tomorrow, you can rest today. You must be exhausted after that long journey."
+        menu:
+            dr "We will leave tomorrow, you can rest today. You _____ be exhausted after that long journey."
+
+            "should":
+                $renpy.fix_rollback()
+            "will":
+                $renpy.fix_rollback()
+            "must":
+                $renpy.fix_rollback()
+                $ scores += 10
 
         mc "What is for dinner?"
 
         dr "Porridge, you like it?"
 
-        "You are suddenly overwhelmed by a rush of memories as your grandma used to make you porridge every day and it's your favourite meal anyday anytime."
+        menu:
+            "You are suddenly _____ by a rush of memories as your grandma used to make you porridge every day and it's your favourite meal anyday anytime."
+
+            "overwhelmed":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "underwhelmed":
+                $renpy.fix_rollback()
 
         "“Of course, I love porridge!” you said in excitement. “My grandma used to make this for me everyday,” you add."
 
         dr "That’s great, although it may not be as delicious as your grandma’s porridge but I hope it keeps you full for now."
 
-        mc "Don't worry, it's delicious. It tastes just like my grandma’s porridge."
+        menu:
+            mc "Don't worry, it's delicious. It tastes just like my grandma’s porridge."
 
         "Both you and Darrick eat the porridge for dinner and hit the hay, a well deserved rest after a long day."
 
@@ -195,7 +347,16 @@ label ch2_1:
 
     label feeling_doubtful:
 
-        dr  "hahah You should not doubt the Guild Master himself, you should meet him for yourself and see."
+        menu:
+            dr  "You should not doubt the Guild Master _____, you should meet him for yourself and see."
+
+            "himself":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "itself":
+                $renpy.fix_rollback()
+            "themself":
+                $renpy.fix_rollback()
 
         mc  "Alright then, I will not doubt the Master’s help. Do we leave now?"
 
@@ -211,13 +372,29 @@ label ch2_1:
 
         "Darrick introduces the Guild Master, Merlin, to you."
 
-        "Darrick then proceeds to describe the red force field power you experienced to Merlin."
+        menu:
+            "Darrick then proceeds to _____ the red force field power you experienced to Merlin."
+
+            "inscribe":
+                $renpy.fix_rollback()
+            "describe":
+                $renpy.fix_rollback()
+                $ scores += 10
 
         "Merlin is taken aback listening to this. He then informs you and Darrick that the red force field power you experienced belongs to the family of dragons."
 
         "However, he explained that there have been no signs of dragon life that exist in the world today. The last two dragons reported alive had disappeared after their clash with the demon king 10 years ago."
 
-        "The three of them are now curious to know how you possess the power of the dragon family."
+        menu:
+            "The three of them are now curious to know how you _____ the power of the dragon family."
+
+            "posess":
+                $renpy.fix_rollback()
+            "possess":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "posses":
+                $renpy.fix_rollback()
 
         "Merlin’s first theory is that you are a child of the dragons."
 
@@ -233,7 +410,16 @@ label ch2_1:
 
     label ch2_positive_reaction:
 
-        ml  "It may be a shock to you now but you will eventually see that you are gifted."
+        menu:
+            ml  "It _____ be a shock to you now but you will eventually see that you are gifted."
+
+            "shall":
+                $renpy.fix_rollback()
+            "would":
+                $renpy.fix_rollback()
+            "may":
+                $renpy.fix_rollback()
+                $ scores += 10
 
         "Merlin immediately notices the silence in the room as soon as he speaks."
 
@@ -247,22 +433,59 @@ label ch2_1:
 
         "Everyone in the room remains quiet while you make a joke out of what Merlin said."
 
-        ml "It’s up to you to believe me or not but that is the truth. You should start taking precautions and explore the guild. Also, you may find a documentary about dragons if you want."
+        menu:
+            ml "It’s up to you to believe me or not but that is the truth. You should start taking precautions and explore the guild. Also, you _____ find a documentary about dragons if you want."
+
+            "shall":
+                $renpy.fix_rollback()
+            "would":
+                $renpy.fix_rollback()
+            "may":
+                $renpy.fix_rollback()
+                $ scores += 10
 
         jump ch2_3_cont
 
     label ch2_3_cont:
 
-        "Merlin then suggests that you are given some time to explore the guild and get comfortable with your surroundings."
+        "Merlin then suggests that you are to be given some time to explore the guild and get comfortable with your surroundings."
 
-        "Derrick takes this opportunity to guide you around the guild. He knew that you wanted to learn more about this world but you lacked the knowledge and needed time to understand new things."
+        menu:
+            "Derrick takes this opportunity to guide you _____ the guild. He knew that you wanted to learn more about this world but you lacked the knowledge and needed time to understand new things."
+
+            "about":
+                $renpy.fix_rollback()
+            "around":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "over":
+                $renpy.fix_rollback()
 
         "He brings you to the library of the guild and advises you to get used to reading books to help expand your knowledge of the world."
 
-        "Darrick soon invites you to become his partner and help him with missions to help you gain more real life experience."
+        menu:
+            "Darrick soon invites you to become his partner and help him with _____ to help you gain more real life experience."
+
+            "quests":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "missions":
+                $renpy.fix_rollback()
+                $ scores += 10
 
         "You agree with the suggestion there and then since you really need to understand the world and learn to cast spells."
 
         "On top of that, you will also be able to gain some fighting experience and learn to manage financial matters."
 
-        "You end up staying in Olympus to gain knowledge of the world, learn to cast spells and complete missions with Darrick."
+        menu:
+            "You end up staying in Olympus to gain knowledge of the world, learn to cast spells and _____ missions with Darrick."
+
+            "complete":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "do":
+                $renpy.fix_rollback()
+                $ scores += 10
+            "finish":
+                $renpy.fix_rollback()
+                $ scores += 10

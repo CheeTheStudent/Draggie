@@ -33,12 +33,12 @@ label ch1_1:
 
   "He burned villages and cities down to ashes, and killed thousands of people."
 
-  "At that time, the last two remaining dragons stepped up to fight against the Demon King to save the world from slaughter."
+  "At that time, the last two remaining dragons stepped up to fight against the Demon King to save the world from being slaughtered."
 
   "The battle finally ended when the dragons and the Demon King mysteriously disappeared."
    
   menu:
-    "Now, this is all that people recall from the _____ ."
+    "Now, this is all that people recall from the _____."
 
     "incident":
       $ renpy.fix_rollback()
@@ -61,11 +61,9 @@ label ch1_1:
 
     "said":
       $renpy.fix_rollback()
-
     "saying":
       $renpy.fix_rollback()
       $ scores += 10
-
     "says":
       $renpy.fix_rollback()
 
