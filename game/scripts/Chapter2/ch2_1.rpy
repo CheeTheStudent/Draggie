@@ -44,7 +44,7 @@ label ch2_1:
     label  ch2_be_polite_to_stranger:
 
         menu:
-            "Stunned, you then _____ the stranger, “How can I help you?”"
+            "Stunned, you then _____ the stranger."
 
             "ask":
                 $renpy.fix_rollback()
@@ -52,6 +52,7 @@ label ch2_1:
             "asked":
                 $renpy.fix_rollback()
             
+        mc "How can I help you?"
 
         sg "Hehe, this way, follow me. I’ll lead you. *still grinning*"
 
@@ -102,9 +103,11 @@ label ch2_1:
             "or":
                 $renpy.fix_rollback()
 
-        "“Woah!” The stranger steps back."
+        sg "Woah!"
+        
+        "The stranger steps back."
 
-        sg  "Hey, hey, take it easy! I’m just joking!"
+        sg "Hey, hey, take it easy! I’m just joking!"
 
         "You stop your action and look at the stranger with an alert."
 
@@ -238,33 +241,41 @@ label ch2_1:
                 $renpy.fix_rollback()
                 $ scores += 10
 
-        "You also explain that you have no clue how you defeated the demon with the force field."
+        mc "Darrick, another thing. I have no clue how I defeated the demon with the force field."
+
+        dr "Hmmm, tell me more about that later."
+
+        "You two approach the inn."
 
         menu:
-            "As you two approach the inn, Darrick urges you to take a shower while he _____ at the cafeteria."
+            dr "I suggest you take a shower first. I'll be _____ at the cafeteria."
 
             "waits":
                 $renpy.fix_rollback()
-                $ scores += 10
-            "wait":
+            "waiting":
                 $renpy.fix_rollback()
+                $ scores += 10
             "waited":
                 $renpy.fix_rollback()
 
-        "Darrick also helps you out with the payment for the inn and tells you not to not worry about it."
+        "Darrick also helps you out with the payment for the inn."
+        
+        dr "Don't worry about it, it's on me."
 
         "After a nice warm bath, you make your way to the cafeteria to find Darrick."
 
         "You then continue the conversation from where it was left off earlier."
 
         menu:
-            "After you describe the demon that you _____ in the forest, Derrick explains to you that the demon you fought was a goblin."
+            "You describe the demon that you _____ in the forest."
 
             "incanted":
                 $renpy.fix_rollback()
             "encountered":
                 $renpy.fix_rollback()
                 $ scores += 10
+
+        dr "Oh my, that demon you fought was a goblin!"
 
         "Darrick then raises his hand and produces a force field around it similar to what you experienced."
 
@@ -283,7 +294,7 @@ label ch2_1:
             "bought":
                 $renpy.fix_rollback()
 
-        "Darrick seemed to be unfamiliar with that occurrence but he suggests that he should introduce you to the Guild Master."
+        dr "Well, to be honest with you I am quite unfamiliar with that but I can introduce you to the Guild Master. He is all-knowing!"
 
         menu:
             "By doing so he hopes that the Guild Master will have an answer to _____ doubts."
@@ -298,17 +309,21 @@ label ch2_1:
 
     menu:
 
-        "You nod in agreement to Darrick’s statement. You become excited and say, “I would love to meet the Guild Master”.":
+        "Excitedly, you nod in agreement to Darrick’s statement."
+        
+        mc "I would love to meet the Guild Master!":
 
             jump nod_in_agreement
 
-        "Feeling doubtful, you ask Darrick, “How can the Guild Master help me?”":
+        "Feeling doubtful, you ask Darrick."
+        
+        mc "How can the Guild Master help me?":
 
             jump feeling_doubtful
 
     label nod_in_agreement:
 
-        "“When will we leave to meet the Master?” you ask in excitement. “Do we leave now?” you add."
+        mc "When will we leave to meet the Master? Do we leave now?"
 
         menu:
             dr "We will leave tomorrow, you can rest today. You _____ be exhausted after that long journey."
@@ -321,7 +336,7 @@ label ch2_1:
                 $renpy.fix_rollback()
                 $ scores += 10
 
-        mc "What is for dinner?"
+        mc "Ohhhh alright, makes sense to me. Anyway, What's for dinner?"
 
         dr "Porridge, you like it?"
 
@@ -334,7 +349,7 @@ label ch2_1:
             "underwhelmed":
                 $renpy.fix_rollback()
 
-        "“Of course, I love porridge!” you said in excitement. “My grandma used to make this for me everyday,” you add."
+        mc "Of course, I love porridge! My grandma used to make this for me everyday."
 
         dr "That’s great, although it may not be as delicious as your grandma’s porridge but I hope it keeps you full for now."
 
@@ -348,7 +363,7 @@ label ch2_1:
     label feeling_doubtful:
 
         menu:
-            dr  "You should not doubt the Guild Master _____, you should meet him for yourself and see."
+            dr  "You should not doubt the Guild Master _____, you should meet him for yourself then you will see."
 
             "himself":
                 $renpy.fix_rollback()
@@ -370,7 +385,7 @@ label ch2_1:
 
         "The following day, you and Darrick head towards the guild to meet the Guild Master."
 
-        "Darrick introduces the Guild Master, Merlin, to you."
+        dr "This is Merlin, the Guild Master I was telling you about."
 
         menu:
             "Darrick then proceeds to _____ the red force field power you experienced to Merlin."
@@ -381,9 +396,11 @@ label ch2_1:
                 $renpy.fix_rollback()
                 $ scores += 10
 
-        "Merlin is taken aback listening to this. He then informs you and Darrick that the red force field power you experienced belongs to the family of dragons."
+        "Merlin is taken aback listening to this."
+        
+        ml "The red force field power you experienced belongs to the family of dragons."
 
-        "However, he explained that there have been no signs of dragon life that exist in the world today. The last two dragons reported alive had disappeared after their clash with the demon king 10 years ago."
+        ml "However, there have been no signs of dragon life that exist in the world today. The last two dragons reported alive had disappeared after their clash with the demon king 10 years ago."
 
         menu:
             "The three of them are now curious to know how you _____ the power of the dragon family."
@@ -396,22 +413,24 @@ label ch2_1:
             "posses":
                 $renpy.fix_rollback()
 
-        "Merlin’s first theory is that you are a child of the dragons."
+        ml " My first theory is that you are a child of the dragons."
 
     menu:
 
-        "Upon hearing this, you freeze and remain silent. You stutter, “How..What?”":
+        "Upon hearing this, you freeze and remain silent."
+        
+        mc "How..Wh-what?":
 
             jump ch2_positive_reaction
 
-        "Stunned, you say, “Me? A child of dragons? No way.”":
+        mc "Me? A child of dragons? Noooo way.":
 
             jump ch2_negative_reaction
 
     label ch2_positive_reaction:
 
         menu:
-            ml  "It _____ be a shock to you now but you will eventually see that you are gifted."
+            ml "It _____ be a shock to you now but you will eventually see that you are gifted."
 
             "shall":
                 $renpy.fix_rollback()
@@ -434,7 +453,7 @@ label ch2_1:
         "Everyone in the room remains quiet while you make a joke out of what Merlin said."
 
         menu:
-            ml "It’s up to you to believe me or not but that is the truth. You should start taking precautions and explore the guild. Also, you _____ find a documentary about dragons if you want."
+            ml "It’s up to you to believe me or not but that is the truth. You should start taking precautions and explore the guild. Also, you _____ look for a documentary on those dragons if you want."
 
             "shall":
                 $renpy.fix_rollback()
@@ -461,7 +480,7 @@ label ch2_1:
             "over":
                 $renpy.fix_rollback()
 
-        "He brings you to the library of the guild and advises you to get used to reading books to help expand your knowledge of the world."
+        dr "Hey, I'll show you the guild library. You should get used to reading books to help expand your knowledge of the world."
 
         menu:
             "Darrick soon invites you to become his partner and help him with _____ to help you gain more real life experience."
