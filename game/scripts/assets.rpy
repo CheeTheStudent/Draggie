@@ -35,3 +35,10 @@ init python:
 
 define eyes_open = ImageDissolve("shuteye.png", 1.5, 100)
 define eyes_close = ImageDissolve("shuteye.png", 0.3, 100, reverse=True)
+
+transform rotation_slow:
+  around (.5, .5) alignaround (.5, .5) xalign .5 yalign .5
+  subpixel True
+  rotate 0
+  linear 30.0 rotate 360 #linear to change speed
+  repeat

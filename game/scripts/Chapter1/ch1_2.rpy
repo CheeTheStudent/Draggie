@@ -17,7 +17,7 @@ label ch1_2:
 
   gm "That baby [boy] was you, [mc]. You are the best grandchild I could ever ask for."
 
-  show grandma neutral
+  show grandma
   gm "Your mother left you a letter before she left."
 
   "She places a folded letter onto the palm of your hand."
@@ -78,10 +78,12 @@ label ch1_2:
   stop sound
   
   scene forest
-  show goblin
-  with dissolve
 
   "The journey to the city was not an easy task. As you approach the final leg of the journey, you encounter a demon that tries to harm you."  
+  
+  show goblin at center:
+    ypos 1.2
+  with dissolve
   play sound "audio/GoblinLaugh.mp3"
 
   mc "{i}How am I going to fight this demon?{/i}"
@@ -109,7 +111,7 @@ label ch1_2:
   "But the impact never comes."
 
   scene forest
-  show magic red full
+  show magic red full at rotation_slow
   with eyes_open
 
   "Confused, you open your eyes and find the demon lying on the ground, defeated."

@@ -123,7 +123,7 @@ label ch1_1:
   "You look for grandma all over the house and eventually find her lying still on the bed."
 
   scene gm_bedroom
-  show grandma neutral
+  show grandma
   pause (2.0)
   mc "Grandma, are you okay… do you need help?"
 
@@ -170,6 +170,8 @@ label ch1_1:
     jump ch1_grandma_cont
 
   label ch1_grandma_cont:
+
+    show grandma
 
     menu:
       "Grandma finally _____ the silence and starts speaking to you."
