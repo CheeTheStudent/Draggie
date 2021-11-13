@@ -71,9 +71,13 @@ label ch1_1:
 
   "Suddenly, you wake up and realize it was all a dream."
 
+  scene white
+  with eyes_awake
+  scene black
+  with eyes_asleep
   scene bedroom
+  with eyes_awake
   play sound "audio/BirdsChirpSound.mp3"
-
 
   mc "{i}Gosh, that was a weird dream!{/i}"
 
@@ -118,6 +122,7 @@ label ch1_1:
 
   "You look for grandma all over the house and eventually find her lying still on the bed."
 
+  scene gm_bedroom
   show grandma neutral
   pause (2.0)
   mc "Grandma, are you okay… do you need help?"

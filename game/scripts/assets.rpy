@@ -23,3 +23,15 @@ default He = "He"
 default His = "His"
 default boy = "boy"
 default Boy = "Boy"
+
+###########     ANIMATIONS     ###########
+define shakescreen_long = Move((0, 10), (0, -10), .10, bounce=True, repeat=True, delay=.5)
+
+init python:
+  def eyewarp(x):
+      return x**1.33
+  eyes_awake = ImageDissolve("eye.png", 1.0, ramplen=128, reverse=False, time_warp=eyewarp)
+  eyes_asleep = ImageDissolve("eye.png", 1.0, ramplen=128, reverse=True, time_warp=eyewarp)
+
+define eyes_open = ImageDissolve("shuteye.png", 1.5, 100)
+define eyes_close = ImageDissolve("shuteye.png", 0.3, 100, reverse=True)

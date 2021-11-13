@@ -12,10 +12,12 @@ label ch1_2:
 
   gm "That baby [boy] stopped crying the moment I held [him]."
 
+  show grandma smile
   "She smiles at you."
 
   gm "That baby [boy] was you, [mc]. You are the best grandchild I could ever ask for."
 
+  show grandma neutral
   gm "Your mother left you a letter before she left."
 
   "She places a folded letter onto the palm of your hand."
@@ -25,7 +27,7 @@ label ch1_2:
   gm "You will face many challenges ahead… so make good friends and you won’t have to face them alone."
 
   menu:
-      gm "I believe you will _____ able to survive just fine without me, my dear boy."
+      gm "I believe you will _____ able to survive just fine without me, my dear [boy]."
 
       "can":
         $renpy.fix_rollback()
@@ -35,6 +37,8 @@ label ch1_2:
       "shall":
         $renpy.fix_rollback()
 
+  hide grandma
+  with fade
   "Grandma closes her eye and you feels her pulse beating slowly to a stop."
 
   "Your eyes fill up with tears, trying to process what happened."
@@ -73,7 +77,8 @@ label ch1_2:
   
   stop sound
   
-  scene goblin
+  scene forest
+  show goblin
   with dissolve
 
   "The journey to the city was not an easy task. As you approach the final leg of the journey, you encounter a demon that tries to harm you."  
@@ -84,11 +89,11 @@ label ch1_2:
   mc "{i}I never fought anyone before... And I’m no match for the demon’s speed.{/i}"
 
   "Suddenly, the demon starts running towards you."
+  show goblin fierce
+  with shakescreen_long
 
-  
-  scene powercharge
-  with dissolve
-
+  scene black
+  with eyes_close
   menu:
       "You brace yourself for the _____, holding up your hands and closing your eyes."
 
@@ -103,6 +108,10 @@ label ch1_2:
 
   "But the impact never comes."
 
+  scene forest
+  show magic red full
+  with eyes_open
+
   "Confused, you open your eyes and find the demon lying on the ground, defeated."
 
   mc "{i}What is going on, how am I alive?{/i}"
@@ -114,6 +123,9 @@ label ch1_2:
   mc "{i}Did… Did I do that?{/i}"
 
   "You lower your hands and watch the force field disappear."
+
+  hide magic red
+  with dissolve
 
   menu:
       "You slowly come to the _____ that as crazy as it is, you have supernatural powers!"

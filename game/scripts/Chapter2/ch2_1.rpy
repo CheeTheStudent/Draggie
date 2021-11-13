@@ -1,5 +1,7 @@
 label ch2_1:
 
+    scene olympus
+
     "You breathe a sigh of relief as soon as you set foot in the town of Olympus."
 
     menu:
@@ -311,13 +313,13 @@ label ch2_1:
 
         "Excitedly, you nod in agreement to Darrick’s statement."
         
-        mc "I would love to meet the Guild Master!":
+        "I would love to meet the Guild Master!":
 
             jump nod_in_agreement
 
         "Feeling doubtful, you ask Darrick."
         
-        mc "How can the Guild Master help me?":
+        "How can the Guild Master help me?":
 
             jump feeling_doubtful
 
@@ -353,8 +355,7 @@ label ch2_1:
 
         dr "That’s great, although it may not be as delicious as your grandma’s porridge but I hope it keeps you full for now."
 
-        menu:
-            mc "Don't worry, it's delicious. It tastes just like my grandma’s porridge."
+        mc "Don't worry, it's delicious. It tastes just like my grandma’s porridge."
 
         "Both you and Darrick eat the porridge for dinner and hit the hay, a well deserved rest after a long day."
 
@@ -419,11 +420,11 @@ label ch2_1:
 
         "Upon hearing this, you freeze and remain silent."
         
-        mc "How..Wh-what?":
+        "How..Wh-what?":
 
             jump ch2_positive_reaction
 
-        mc "Me? A child of dragons? Noooo way.":
+        "Me? A child of dragons? Noooo way.":
 
             jump ch2_negative_reaction
 
