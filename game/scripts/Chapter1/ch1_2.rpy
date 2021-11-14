@@ -71,9 +71,9 @@ label ch1_2:
 
       "venture":
         $renpy.fix_rollback()
+        $ scores += 10
       "venturing":
         $renpy.fix_rollback()
-        $ scores += 10
   
   stop sound
   

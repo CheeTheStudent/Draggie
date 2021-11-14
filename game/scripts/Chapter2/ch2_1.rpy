@@ -17,7 +17,7 @@ label ch2_1:
 
     "You realise that your body reeks from skipping out on showers during your walk to Olympus."
 
-    mc "{i}{b}Sigh..{/b}{/i}" 
+    mc "{i}*Sigh*...{/i}" 
     
     mc "{i}I can’t continue my journey like this.{/i}"
 
