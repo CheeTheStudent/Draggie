@@ -19,9 +19,9 @@ by how well players answer all the questions. </p>
 <h3 align="center">✨ Explore a new magical world inhabited by dragons, demons and humans alike ✨</h3>
 <img src="https://drive.google.com/uc?export=view&id=12Ty8d21gIXk1DPS3rF6B4rXfceXbAQCY" alt="World Screenshot" >
 <h3 align="center">🧙 Meet interesting characters that will accompany you on your mission 🧙</h3>
-<img src="https://drive.google.com/uc?export=view&id=1oCPpZ8yddR96_DvXks1Ovn7QaCjcNdi5" alt="World Screenshot" >
+<img src="https://drive.google.com/uc?export=view&id=1oCPpZ8yddR96_DvXks1Ovn7QaCjcNdi5" alt="Character Screenshot" >
 <h3 align="center">📖 Decide your fate by answering the English questions throughout your journey 📖</h3>
-<img src="https://drive.google.com/uc?export=view&id=17IXeJNnH75jfdv8lHJyPAsu_yh1Wvw-U" alt="World Screenshot" >
+<img src="https://drive.google.com/uc?export=view&id=17IXeJNnH75jfdv8lHJyPAsu_yh1Wvw-U" alt="Question Screenshot" >
 <h3 align="center">🔥 Discover your true identity and save the world.. or doom it again? 🔥</h3>
 
 ## 👨‍💻 The Team
