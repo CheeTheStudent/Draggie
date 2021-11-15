@@ -11,12 +11,29 @@ in a fantasy world where dragons and demons roam the Earth alongside humans. The
 of only choosing between choices the character makes, players are prompted with English questions to answer as well. The fate of the characters are determined
 by how well players answer all the questions. </p>
 
+## 🎯 Objectives
+1. To create a game-based learning activity for the English subject.
+2. To focus on teaching primary school students between the ages of 6-12.
+
 ## 🎮 Features
-* Explore a new magical world inhabited by dragons, demons and humans alike
-* Decide your fate by answering the English questions throughout your journey
-* Meet interesting characters that will accompany you on your mission
-* Discover your true identity and save the world.. or doom it again?
-* Unlock endings as you solve each question correctly
+<h3 align="center">✨ Explore a new magical world inhabited by dragons, demons and humans alike ✨</h3>
+<img src="https://drive.google.com/uc?export=view&id=12Ty8d21gIXk1DPS3rF6B4rXfceXbAQCY" alt="World Screenshot" >
+<h3 align="center">🧙 Meet interesting characters that will accompany you on your mission 🧙</h3>
+<img src="https://drive.google.com/uc?export=view&id=1oCPpZ8yddR96_DvXks1Ovn7QaCjcNdi5" alt="World Screenshot" >
+<h3 align="center">📖 Decide your fate by answering the English questions throughout your journey 📖</h3>
+<img src="https://drive.google.com/uc?export=view&id=17IXeJNnH75jfdv8lHJyPAsu_yh1Wvw-U" alt="World Screenshot" >
+<h3 align="center">🔥 Discover your true identity and save the world.. or doom it again? 🔥</h3>
 
+## 👨‍💻 The Team
+* Chee Jia Hua: Developer, Art Team, Scriptwriter
+* Dharvin Chandran: Developer, Main Assistant Scriptwriter
+* Sarrene Madialagan: Developer, Animations & Effects, Scriptwriter
+* Sophia Soo Hoo: Developer, Grammar Questions, Scriptwriter
+* Vicky Lee: Developer, Art Team, Scriptwriter 
+* Yeoh Ching Huei: Developer, Main Scriptwriter
+<a href="https://github.com/CheeTheStudent/Draggie/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=CheeTheStudent/Draggie" style="height: 40px" />
+</a>
 
+Made with [contributors-img](https://contrib.rocks).
 
