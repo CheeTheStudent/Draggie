@@ -9,6 +9,7 @@ define sg = Character("Stranger", who_color="e0ab2f")
 define dr = Character("Darrick", who_color="e0ab2f")
 define ml = Character("Merlin", who_color="e0ab2f")
 define ed = Character("Edgar", who_color="e0ab2f")
+define b = Character("Boy", who_color="e0ab2f")
 
 ###########     BACKGROUNDS     ###########
 
