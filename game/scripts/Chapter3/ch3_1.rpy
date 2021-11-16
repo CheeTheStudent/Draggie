@@ -37,6 +37,10 @@ label ch3_1:
         "explanation":
             $renpy.fix_rollback()
 
+    play sound "audio/DoorOpen.mp3"
+    show merlin at left
+    with move
+    show darrick at right with dissolve
 
     "Suddenly, Darrick breaks the door and shouts."
 
@@ -58,18 +62,24 @@ label ch3_1:
         "over":
             $renpy.fix_rollback()
 
+    show darrick grin
     dr "Haha, I’m sorry, I’ll watch out next time."
 
-    dr "MC, I’m going with you. You can’t leave me behind, and I’m your best partner!"
+    show darrick
+    dr "[mc], I’m going with you. You can’t leave me behind, and I’m your best partner!"
 
     mc"Alright, alright, I will never stop you from following me… Hmm, we need to prepare before leaving. So, we are leaving tomorrow."
 
+    show darrick grin
     dr "Yes, Sir!"
 
-    "The next day"
+    play sound "audio/TheNextDay.mp3"
+    call scene_transition_title('The next day...')
 
     "At the entrance of Olympus…"
 
+    show merlin at left
+    show darrick at right
     menu:
         ml "Be careful on your _____."
 
@@ -87,13 +97,14 @@ label ch3_1:
 
     dr "Take care, old man."
 
-    "Walk away while waving hand"
+    "You and Darrick walk away while waving hand."
     
-    dr "Bye~."
+    dr "Bye~"
     
-    "On the way to Elysium"
+    call scene_transition_title('On the way to Elysium')
 
-    dr "MC, are we gonna rest? It’s almost night, I’m so tired and hungry"
+    show darrick angry
+    dr "[mc], are we gonna rest? It’s almost night, I’m so tired and hungry."
 
     menu:
         "Saying while looking up at the sky."
@@ -113,6 +124,7 @@ label ch3_1:
     label ch3_rest:
         mc "Ok then, let’s find a place to have a rest, and we will continue our journey tomorrow. Sounds good for you?"
 
+        show darrick
         dr "Yes!!! Finally I get to rest for such a long walk."
 
         jump ch3_darrick_cont
@@ -121,14 +133,16 @@ label ch3_1:
 
         "Suddenly, you stopped."
 
+        show darrick surprised
         dr "What’s the matter?"
 
         mc "I think we’ve got company..." 
         
         "Saying while firing a blast towards nearby grass."
 
+        show darrick
         menu:
-
+            
             dr "Hey, leave some for me. Fighting demons is the only way to _____ my boredom." 
 
             "stop":
@@ -151,10 +165,12 @@ label ch3_1:
 
         mc "Darrick?"
 
-        dr "Woah, Mc, there’s a boy here, still breathing!"
+        show darrick surprised
+        dr "Woah, [mc], there’s a boy here, still breathing!"
 
         mc "Is he hurt or something?"
 
+        show darrick
         dr "Nope. He looks fine but just unconscious."
 
         mc "Okay, we rest here today and find out who he is tomorrow."
