@@ -137,7 +137,7 @@ label ch3_2:
             "Prank Darrick.":
                 jump ch3_prank_darrick
 
-            "Ask Darrick to slow down."
+            "Ask Darrick to slow down.":
                 jump ch3_warn_darrick
 
         label ch3_prank_darrick:
