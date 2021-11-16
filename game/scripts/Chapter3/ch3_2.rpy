@@ -46,7 +46,7 @@ label ch3_2:
 
         jump ch3_boy_cont
     
-    jump ch3_boy_cont:
+    label ch3_boy_cont:
 
         dr ".... [mc], am I looking weird?"
 
