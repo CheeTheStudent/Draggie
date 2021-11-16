@@ -2,21 +2,21 @@ label ch3_2:
 
     "The next day"
 
-    b: "Argh..."
+    b "Argh..."
 
     menu:
 
         dr "Oh, you’re _____ !"
 
         "awoke":
-        $renpy.fix_rollback()
+            $renpy.fix_rollback()
         
         "awaken":
-        $renpy.fix_rollback()
+            $renpy.fix_rollback()
             
         "awake":
-        $renpy.fix_rollback()
-        $ scores += 10
+            $renpy.fix_rollback()
+            $ scores += 10
 
     
 
@@ -34,7 +34,7 @@ label ch3_2:
 
     label ch3_boy_answer:
 
-        b: "...yes, please."
+        b "...yes, please."
 
         "The boy gets the bread and stares at both of you."
 
@@ -42,7 +42,7 @@ label ch3_2:
 
     label ch3_boy_no_answer:
 
-        b: "..."
+        b "..."
 
         "The boy doesn’t answer and stares at both of you."
 
@@ -103,14 +103,14 @@ label ch3_2:
             mc "Wow, this is something beyond my _____ ."
 
             "imaginations":
-            $renpy.fix_rollback()
+                $renpy.fix_rollback()
             
             "expectations":
-            $renpy.fix_rollback()
-            $ scores += 10 
+                $renpy.fix_rollback()
+                $ scores += 10 
 
             "apprehension":
-            $renpy.fix_rollback()
+                $renpy.fix_rollback()
 
         dr "Yeah, it’s insane! I’m claiming this house. Let’s just live here from now on!" (grin)
 
@@ -121,18 +121,17 @@ label ch3_2:
         mc "Welcome to the gang."
 
         menu:
-
-            "Darrick runs into the mansion _____ you and Edgar follow behind closely.
+            "Darrick runs into the mansion _____ you and Edgar follow behind closely."
 
             "while":
-            $renpy.fix_rollback()
-            $ scores += 10 
+                $renpy.fix_rollback()
+                $ scores += 10 
 
             "although":
-            $renpy.fix_rollback()
+                $renpy.fix_rollback()
 
             "but":
-            $renpy.fix_rollback()
+                $renpy.fix_rollback()
 
         menu:
 
@@ -178,17 +177,17 @@ label ch3_2:
 
             menu:
 
-                "You and your friends continue exploring the mansion further and eventually find a _____ of stairs leading to an underground basement.
+                "You and your friends continue exploring the mansion further and eventually find a _____ of stairs leading to an underground basement."
 
                 "flock":
-                $renpy.fix_rollback()
+                    $renpy.fix_rollback()
                 
                 "fleet":
-                $renpy.fix_rollback()
+                    $renpy.fix_rollback()
 
                 "flight":
-                $renpy.fix_rollback()
-                $ scores += 10 
+                    $renpy.fix_rollback()
+                    $ scores += 10 
 
             dr "It’s so scary down here… Hold me."
 
@@ -202,17 +201,17 @@ label ch3_2:
 
             menu:
 
-                "You and your friends walk closer to the red light and notice that it is being _____ from a floating crystal-like object.
+                "You and your friends walk closer to the red light and notice that it is being _____ from a floating crystal-like object."
 
                 "amitted":
-                $renpy.fix_rollback()
+                    $renpy.fix_rollback()
                 
                 "emitted":
-                $renpy.fix_rollback()
-                $ scores += 10
+                    $renpy.fix_rollback()
+                    $ scores += 10
 
                 "admitted":
-                $renpy.fix_rollback()
+                    $renpy.fix_rollback()
 
             dr "Woah, what do you think that is?"
 
@@ -222,6 +221,6 @@ label ch3_2:
 
             "You reach your hand out and look towards Darrick for reassurance."
 
-            mc "Should I?
+            mc "Should I?"
 
             "Darrick nods his head in agreement, and without a second thought, you wrap your fingers around the crystal."

@@ -62,9 +62,17 @@ label ch1_2:
 
   "A couple of weeks have passed since the death of your grandma."
 
+  "From your mother's letter, you know that as long as you grow up and become stronger, you can know where your parents are."
+
+  "You also remembered your dream."
+
+  mc "Beware of the black flame..."
+
+  mc "I need to grow stronger to find out the truth!"
+
   "You have been sheltered by grandma for the majority of your life."
 
-  "You have now decided to get out of your comfort zone and explore the city to gain new knowledge and experience."
+  "You have now decided to get out of your comfort zone and explore the city to gain new knowledge and become stronger."
 
   menu:
       "You live in the mountains. In order to _____ into the city, you need to cross a forest."
