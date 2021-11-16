@@ -18,9 +18,11 @@ label ch3_2:
         $renpy.fix_rollback()
         $ scores += 10
 
-    "Do you want some bread?"
+    
 
     menu:
+
+        mc "Do you want some bread?"
 
         "The boy answer.":
 
@@ -141,6 +143,7 @@ label ch3_2:
                 jump ch3_warn_darrick
 
         label ch3_prank_darrick:
+        
             mc "Watch out, someone is behind you!"
 
             dr "Oh my god, where!!??"
