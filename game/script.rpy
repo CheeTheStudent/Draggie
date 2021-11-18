@@ -47,6 +47,12 @@ label start:
     call ch3_1
     call ch3_2
 
+    call chapter_splash_screen(4)
+    show screen gameStats
+    call ch4_1
+    
+
+
     # This ends the game.
 
     return
