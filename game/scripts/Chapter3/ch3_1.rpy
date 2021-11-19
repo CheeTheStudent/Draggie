@@ -1,9 +1,11 @@
 label ch3_1:
 
     play sound "audio/1yearLater.mp3"
+    
     call scene_transition_title('1 year later...')
     
     # "1 year later…"
+    scene merlin_office
 
     "Early in the morning, you meet with Merlin."
 
@@ -76,6 +78,8 @@ label ch3_1:
     play sound "audio/TheNextDay.mp3"
     call scene_transition_title('The next day...')
 
+    scene olympus_entrance
+
     "At the entrance of Olympus…"
 
     show merlin at left
@@ -102,6 +106,8 @@ label ch3_1:
     dr "Bye~"
     
     call scene_transition_title('On the way to Elysium')
+
+    scene forest2
 
     show darrick angry
     dr "[mc], are we gonna rest? It’s almost night, I’m so tired and hungry."
@@ -164,6 +170,8 @@ label ch3_1:
         "Ran to chase the demons, but he stops."
 
         mc "Darrick?"
+
+        scene rest forest
 
         show darrick surprised
         dr "Woah, [mc], there’s a boy here, still breathing!"

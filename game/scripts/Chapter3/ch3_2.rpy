@@ -4,6 +4,8 @@ label ch3_2:
     call scene_transition_title('The next day...')
     # "The next day"
 
+    scene rest forest
+
     show edgar 
     b "Argh..."
 
@@ -101,6 +103,9 @@ label ch3_2:
 
         hide edgar
         hide darrick
+
+        scene mansion
+
         "So you and your friends continue your journey and reach the mansion of Dragons in Elysium."
 
         menu:
@@ -141,6 +146,8 @@ label ch3_2:
 
             "but":
                 $renpy.fix_rollback()
+
+        scene inside mansion
 
         menu:
             "Prank Darrick.":
@@ -200,6 +207,8 @@ label ch3_2:
                     $renpy.fix_rollback()
                     $ scores += 10 
 
+            scene stairs
+
             show darrick surprised
             dr "It’s so scary down here… Hold me."
 
@@ -212,7 +221,11 @@ label ch3_2:
             hide edgar
             "In front of you, you notice a bright, red light coming from the end of the stairs."
 
+            scene red light
+
             mc "Guys, something is in front."
+
+            scene far blur crystal
 
             menu:
 
@@ -233,6 +246,11 @@ label ch3_2:
             
             mc "I have no idea. Let’s take a closer look."
             hide darrick
+
+            scene blur crystal
+            with eyes_awake
+            scene blur crystal
+            with eyes_asleep
             
             "You approach the crystal, your vision blurring due to the bright reflection it emits."
 
