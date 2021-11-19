@@ -2,6 +2,7 @@ label ch2_1:
 
     scene olympus
 
+    play sound "audio/BusyTown.mp3" volume 0.25
     "You breathe a sigh of relief as soon as you set foot in the town of Olympus."
 
     menu:
@@ -15,12 +16,14 @@ label ch2_1:
         "given":
             $renpy.fix_rollback()
 
-    "You realise that your body reeks from skipping out on showers during your walk to Olympus."
+    stop sound 
 
+    "You realise that your body reeks from skipping out on showers during your walk to Olympus."
+    
+    play sound "audio/McSigh.mp3"
     mc "{i}*Sigh*...{/i}" 
     
     mc "{i}I can’t continue my journey like this.{/i}"
-
     menu:
         mc "{i}I should find a place to _____ up and rest for the night.{/i}"
 
@@ -32,6 +35,7 @@ label ch2_1:
 
     "You walk around the unfamiliar town looking for a place to stay."
 
+    play sound "audio/PatBack.mp3"
     "Suddenly, you feel a pat on your back."
 
     sg "Hey!"

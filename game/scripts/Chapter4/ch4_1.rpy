@@ -1,30 +1,54 @@
 label ch4_1:
+    
+    scene black 
+    scene clear crystal with dissolve
 
     "The moment you make contact with the crystal, all hell breaks loose. There is a strong vibration that causes both you and Darrick to stumble and fall."
-
+    
+    show clear crystal with shakescreen_long
     mc "Darrick, you alright?"
-
+ 
     dr "I’m good, but did you feel that? What was that?"
-
+   
+    show shuteye
+    with shakescreen_long
+    
+    play sound "audio/RocksCrumbling.mp3"
     "You feel the rocks crumbling down in the underground basement."
+    stop sound
 
     mc "Darrick, I don’t feel so good..."
+    show darrick surprised
 
     dr "....." 
+    
+    hide darrick surprised with dissolve
+
+    show eye
+    with dissolve
 
     mc "I’m losing consciousness.."
 
     "As soon as you get a hold of the teardrop crystal, you immediately faint from the strong force of the crystal."
+    play sound "audio/PowerForce.mp3"
+
+    show eye close with dissolve
 
     "You feel your eyes close slowly as Darrick lays unmoving in front of you."
-
+    stop sound
     "~ dreaming"
 
-    "You open your eyes and things are blurry. You soon regain your vision but realize what you see is an unfamiliar atmosphere."
+    show basement blur with dissolve
 
+    "You open your eyes and things are blurry. You soon regain your vision but realize what you see is an unfamiliar atmosphere."
+  
+    show basement clear 
+   
     "You realize you’re in a dream from someone else’s point of view but you can’t seem to make out who it is."
 
     "You then see a person walking past you and into a room."
+    show father at left
+    with move
 
     mc "{i}I wonder who that is.{/i}"
 
@@ -32,10 +56,13 @@ label ch4_1:
 
     "You are able to observe what was going to happen as if it was from your own memories. However, your vision is not clear enough to see anything clearly."
 
+    scene black
+    show basement room 
+
     "‘You’ enter the room behind the mysterious person and close the door. You roughly see that the person is a man."
 
     "Taking a closer look, you spot a dragon tattoo on the man’s neck. The person and ‘You’ engage in a conversation and start _________ over your son’s safety."
-
+    show father at right
     menu:
         "Taking a closer look, you spot a dragon tattoo on the man’s neck. The person and ‘You’ engage in a conversation and start _________ over your son’s safety."
 
@@ -64,7 +91,7 @@ label ch4_branch1_pos:
 
     "The conversation went on for a couple of minutes. There was a debate between both parties over what to do with the boy in question."
 
-    "He and ‘You’ eventually come to a conclusion to leave the boy at a house where he would be safe."
+    "He and mother eventually come to a conclusion to leave the boy at a house where he would be safe."
 
     jump ch4_branch1_cont
 
@@ -77,7 +104,7 @@ label ch4_branch1_neg:
     you "What are we going to do about our son?"
 
     man "Shhh, lower your voice. He might hear us."
-
+    
     you "Have you come up with a plan? I’m worried about him."
 
     man "I have it worked out. We will...” *voice disappears*"
@@ -90,7 +117,7 @@ label ch4_branch1_cont:
 
     "The man mentions that the demon king has been a threat towards them, and that he might make a move to attack their family, and even worse, he might harm the boy."
 
-    "He informs ‘You’ to take this opportunity to bring the boy to a house he and ‘You’ went to before to seek shelter as the man tries to lure the demon king into a place called the Savanna forest."
+    "He informs mother to take this opportunity to bring the boy to a house he and mother went to before to seek shelter as the man tries to lure the demon king into a place called the Savanna forest."
 
     you "I am pretty sure the old lady wouldn’t mind taking care of him."
 
@@ -100,22 +127,36 @@ label ch4_branch1_cont:
 
     man "Alright,I will. See you at Savanna Forest. Be ready for the worst.."
 
-    "‘You’ rush to drop the boy off at an old lady’s house."
+    hide father with dissolve
+    hide basement room with dissolve
+    scene black
+    show grandma house with dissolve
+    play sound "audio/GrandmaHouse.mp3"
+
+    "Mother rush to drop the boy off at an old lady’s house."
 
     mc "{i}Grandma ??! Who is this baby? What’s going on{/i}?"
 
+    stop sound
+    hide grandma houe with dissolve
+    scene black 
     "Your vision cuts off and when it recovers, ‘You’ have come to the mansion’s underground basement."
-
+    scene black
+    show basement room with dissolve
     mc "{i}This is Elysium!{/i}"
 
     you "Son, this is what mother can do for you. I love you, always..."
 
     "The woman cries and as her tears drop onto her hand, she uses her power to crystallize it and makes it float in the air."
-
+    
     mc "It’s the red power! It’s the same as mine! What is the relationship between this woman and I? And also… grandma."
-
+    
+    hide basement room with dissolve
     "After that, the woman rushes to Savanna Forest to meet the man. You want to keep following the story but your sight goes dark."
-
+    
+    show inside mansion with dissolve
+    show darrick surprised at left 
+    with move
     "You are eventually awakened by Darrick calling out your name, and you notice it was, in fact, a dream."
 
     mc "Woah, that was odd.."
@@ -123,14 +164,18 @@ label ch4_branch1_cont:
     "Darrick sits you upright and checks to make sure you are okay."
 
     dr "How are you feeling there? Had a good dream?"
+    show darrick grin
 
     mc "You know what, let’s leave this place now before anything weirder happens."
 
     "You, Darrick, and Edgar all decide to leave Elysium mansion after retrieving the teardrop crystal."
 
     dr "Did anything happen? Are we in a hurry? Where do we head off to now?"
+    show darrick surprised
 
     ed "I was wondering the same."
+    show edgar at right 
+    with move
 
     menu:
         "Tell them about your dream":
@@ -144,8 +189,10 @@ label ch4_branch1_cont:
 label  ch4_branch2_pos:
 
     dr "A man, a woman, a child and your grandma? Argh, I’m confused!"
+    show darrick angry
 
     ed "You just said Savanna Forest, right?"
+    show edgar
 
     mc "Yes, I think we can get all the answers at Savanna Forest. Let’s go!"
 
@@ -156,8 +203,11 @@ label  ch4_branch2_neg:
     mc "I think it's best for our safety, and we need to head to another place. It’s called Savanna Forest."
 
     dr "Sure thing, let's go."
+    show darrick grin
 
     ed "Okay"
+    hide darrick
+    hide edgar
 
     jump ch4_branch2_cont
 
@@ -166,11 +216,11 @@ label ch4_branch2_cont:
     "On the journey back, Darrick tries to figure out the location of Savanna Forest."
 
     dr "Was there any clue in your dream that will help get us there?"
-
+    show darrick surprised
     mc "The dream seems foggy to me now, maybe once I see a spot, I might remember."
 
     dr "Sure thing."
-
+    show darrick grin
     "The next goal is to make it to Savanna Forest and find the meaning behind the dream."
 
     "Darrick suggests going to Merlin, the guild master, once again for help on finding the location."
@@ -178,11 +228,11 @@ label ch4_branch2_cont:
     "Upon your return to the guild, Merlin greets you with an old scroll in his hand. He passes the scroll to Darrick and tells him that the location of Savanna Forest can be found on this map."
 
     dr "Did you hear that? *whispers*"
-
+    show darrick surprised
     ed "Shhh..."
 
     mc "Yes I can, he gave us an old map. *Whispers*"
-
+   
     ml "You know I can hear you right?"
 
     "You and Darrick both start to giggle"
@@ -196,7 +246,7 @@ label ch4_branch2_cont:
     ml "Both of you need to pay attention and stay strong out there. It is a wild place. Always pay attention to your surroundings."
 
     dr "Do you think we are ready? Because I think we can take on anyone that crosses us! HAHA!"
-
+    show darrick grin
     ml "It seems like you made a new friend."
 
     ml "glances at Edgar with a curious look on his face."

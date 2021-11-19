@@ -260,3 +260,5 @@ label ch3_2:
             mc "Should I?"
 
             "Darrick nods his head in agreement, and without a second thought, you wrap your fingers around the crystal."
+
+            hide edgar

@@ -5,18 +5,19 @@ define g = Character("Grandma")
 label ch1_1:
 
   scene burning_village
-  play sound "audio/fire.mp3"
+  play sound "audio/fire.mp3" volume 0.75
 
   menu:
-
+     
     "10 years ago, a demon king was _____ into the world."
 
     "birth":
 
       $ renpy.fix_rollback() # This is to prevent users changing answers
       
+      play sound "audio/studios_0001.mp3"
       "This is the wrong answer. Choosing wrong answers will deduct your scores." (what_color="#cc8888")
-
+      play sound "audio/studios_0003.mp3"
       "Your scores won't be deducted now, but it will the next time!" (what_color="#cc8888")
 
     "born": 
@@ -29,10 +30,12 @@ label ch1_1:
 
   "So think twice before answering! Now, on with the story!" (what_color="#8c8")
 
+  play sound "audio/studios_0005.mp3"
   "The Demon King was a cruel and evil being who showed no mercy."
-
+  
+  play sound "audio/studios_0004.mp3"
   "He burned villages and cities down to ashes, and killed thousands of people."
-
+  
   "At that time, the last two remaining dragons stepped up to fight against the Demon King to save the world from being slaughtered."
 
   "The battle finally ended when the dragons and the Demon King mysteriously disappeared."
