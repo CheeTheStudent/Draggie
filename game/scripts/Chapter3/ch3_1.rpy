@@ -113,7 +113,7 @@ label ch3_1:
     dr "[mc], are we gonna rest? It’s almost night, I’m so tired and hungry."
 
     menu:
-        "Saying while looking up at the sky."
+        "You look at the sky."
 
         "Continue the journey":
             jump ch3_continue_journey
@@ -137,14 +137,14 @@ label ch3_1:
 
     label ch3_darrick_cont:
 
-        "Suddenly, you stopped."
+        "Suddenly, you stop."
 
         show darrick surprised
         dr "What’s the matter?"
 
         mc "I think we’ve got company..." 
         
-        "Saying while firing a blast towards nearby grass."
+        "You fire a blast towards nearby grass."
 
         show darrick
         menu:
@@ -167,7 +167,7 @@ label ch3_1:
 
         dr "...Ahh, that’s it? Hey, demons! Come back!" 
         
-        "Ran to chase the demons, but he stops."
+        "Run to chase the demons, but he stops."
 
         mc "Darrick?"
 

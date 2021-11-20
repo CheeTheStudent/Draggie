@@ -51,7 +51,7 @@ label ch3_2:
 
         dr ".... [mc], am I looking weird?"
 
-        mc "Huh? No. Why did you ask?"
+        mc "Huh? No. Why do you ask?"
 
         show darrick angry
         dr "He’s staring at me, don’t you see?"
@@ -73,7 +73,7 @@ label ch3_2:
 
         b "..."
 
-        "After some time, the boy started introducing himself."
+        "After some time, the boy starts introducing himself."
 
         b "I only remember that my name is Edgar. I don’t remember anything else."
 
