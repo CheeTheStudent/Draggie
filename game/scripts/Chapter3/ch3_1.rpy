@@ -7,10 +7,10 @@ label ch3_1:
     # "1 year later…"
     scene merlin_office
 
+    show merlin:
+        ypos 0.01
+        
     "Early in the morning, you meet with Merlin."
-
-    show merlin
-    with dissolve
 
     menu:
 
@@ -40,15 +40,19 @@ label ch3_1:
             $renpy.fix_rollback()
 
     play sound "audio/DoorOpen.mp3"
-    show merlin at left
-    with move
+
+    hide merlin
+    
     show darrick at right with dissolve
 
     "Suddenly, Darrick breaks the door and shouts."
 
     dr "I’m coming with you!"
 
-    dr "Darrick! How many times do I have to tell you? Knock on the door first before you come in!" 
+    show merlin angry at left:
+        ypos 1.1
+
+    ml "Darrick! How many times do I have to tell you? Knock on the door first before you come in!" 
 
     menu:
 
@@ -67,6 +71,8 @@ label ch3_1:
     show darrick grin
     dr "Haha, I’m sorry, I’ll watch out next time."
 
+    hide merlin angry
+
     show darrick
     dr "[mc], I’m going with you. You can’t leave me behind, and I’m your best partner!"
 
@@ -82,7 +88,8 @@ label ch3_1:
 
     "At the entrance of Olympus…"
 
-    show merlin at left
+    show merlin at left:
+        ypos 1.1
     show darrick at right
     menu:
         ml "Be careful on your _____."
