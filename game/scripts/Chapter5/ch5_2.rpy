@@ -157,7 +157,7 @@ label ending_best:
 
   "You don’t remember the battle, after all."
 
-  ed "Tell me, what do you mean that the dragons ‘didn’t mean to banish me like that?"
+  ed "Tell me, what do you mean that the dragons ‘didn’t mean to banish me like that'?"
 
   mc "They only did what’s best for humanity then. You had wreaked too much havoc, and it was all the dragons could do to prevent worse from happening."
 

@@ -47,8 +47,7 @@ label ch4_1:
     "You realize you’re in a dream from someone else’s point of view but you can’t seem to make out who it is."
 
     "You then see a person walking past you and into a room."
-    show father at left
-    with move
+    show father with dissolve
 
     mc "{i}I wonder who that is.{/i}"
 
@@ -58,11 +57,12 @@ label ch4_1:
 
     scene black
     show basement room 
-
+    
     "‘You’ enter the room behind the mysterious person and close the door. You roughly see that the person is a man."
 
-    "Taking a closer look, you spot a dragon tattoo on the man’s neck. The person and ‘You’ engage in a conversation and start _________ over your son’s safety."
-    show father at right
+    # "Taking a closer look, you spot a dragon tattoo on the man’s neck. The person and ‘You’ engage in a conversation and start _________ over your son’s safety."
+    show father with dissolve
+
     menu:
         "Taking a closer look, you spot a dragon tattoo on the man’s neck. The person and ‘You’ engage in a conversation and start _________ over your son’s safety."
 
@@ -125,7 +125,7 @@ label ch4_branch1_cont:
 
     you "I’ll get his bags ready to go, and… please be careful out there.."
 
-    man "Alright,I will. See you at Savanna Forest. Be ready for the worst.."
+    man "Alright, I will. See you at Savanna Forest. Be ready for the worst.."
 
     hide father with dissolve
     hide basement room with dissolve
@@ -138,18 +138,20 @@ label ch4_branch1_cont:
     mc "{i}Grandma ??! Who is this baby? What’s going on{/i}?"
 
     stop sound
-    hide grandma houe with dissolve
+    hide grandma house with dissolve
     scene black 
     "Your vision cuts off and when it recovers, ‘You’ have come to the mansion’s underground basement."
     scene black
-    show basement room with dissolve
+    show underground with dissolve:
+        zoom 1.4
+    
     mc "{i}This is Elysium!{/i}"
 
     you "Son, this is what mother can do for you. I love you, always..."
 
     "The woman cries and as her tears drop onto her hand, she uses her power to crystallize it and makes it float in the air."
     
-    mc "It’s the red power! It’s the same as mine! What is the relationship between this woman and I? And also… grandma."
+    mc "{i}It’s the red power! It’s the same as mine! What is the relationship between this woman and I? And also… grandma.{/i}"
     
     hide basement room with dissolve
     "After that, the woman rushes to Savanna Forest to meet the man. You want to keep following the story but your sight goes dark."
@@ -162,20 +164,22 @@ label ch4_branch1_cont:
     mc "Woah, that was odd.."
     
     "Darrick sits you upright and checks to make sure you are okay."
-
+    
+    show darrick
     dr "How are you feeling there? Had a good dream?"
-    show darrick grin
 
     mc "You know what, let’s leave this place now before anything weirder happens."
 
+    hide darrick with dissolve
     "You, Darrick, and Edgar all decide to leave Elysium mansion after retrieving the teardrop crystal."
 
-    dr "Did anything happen? Are we in a hurry? Where do we head off to now?"
     show darrick surprised
+    dr "Did anything happen? Are we in a hurry? Where do we head off to now?"
 
-    ed "I was wondering the same."
+    show darrick surprised at left with move
     show edgar at right 
     with move
+    ed "I was wondering the same."
 
     menu:
         "Tell them about your dream":
@@ -213,50 +217,72 @@ label  ch4_branch2_neg:
 
 label ch4_branch2_cont:
 
+    scene forest2
+    show darrick with dissolve
     "On the journey back, Darrick tries to figure out the location of Savanna Forest."
 
     dr "Was there any clue in your dream that will help get us there?"
     show darrick surprised
     mc "The dream seems foggy to me now, maybe once I see a spot, I might remember."
 
-    dr "Sure thing."
     show darrick grin
+    dr "Sure thing."
+    
+    hide darrick
     "The next goal is to make it to Savanna Forest and find the meaning behind the dream."
 
     "Darrick suggests going to Merlin, the guild master, once again for help on finding the location."
 
+    scene merlin_office
     "Upon your return to the guild, Merlin greets you with an old scroll in his hand. He passes the scroll to Darrick and tells him that the location of Savanna Forest can be found on this map."
 
+    show darrick surprised with dissolve
     dr "Did you hear that? *whispers*"
-    show darrick surprised
+    
+    show darrick surprised at left with move
+    with dissolve
+    show edgar at right with dissolve
     ed "Shhh..."
 
     mc "Yes I can, he gave us an old map. *Whispers*"
-   
+
+    hide darrick
+    show merlin at left:
+        ypos 1.1
+
     ml "You know I can hear you right?"
 
     "You and Darrick both start to giggle"
 
     ed "*Sighs*"
 
+    hide merlin
+    hide edgar
     "You and Darrick are overjoyed. With the map in hand, you are one step closer to finally uncovering the missing piece of the story."
 
     "The guild master, however, didn’t seem to be too happy about it. He informs both of you that Savanna Forest can be a dangerous place to step foot in and that you have to keep your guard up at all times."
 
+    show merlin at left with dissolve:
+        ypos 1.1
     ml "Both of you need to pay attention and stay strong out there. It is a wild place. Always pay attention to your surroundings."
 
+    show darrick grin at right with dissolve
     dr "Do you think we are ready? Because I think we can take on anyone that crosses us! HAHA!"
-    show darrick grin
+    
     ml "It seems like you made a new friend."
 
-    ml "glances at Edgar with a curious look on his face."
+    "Merlin glances at Edgar with a curious look on his face."
 
+    hide darrick
+    show edgar at right with dissolve
     ed "Hi, I’m Edgar. Nice to meet you."
 
     ml "My name is Merlin. It’s good seeing new faces around here lately."
 
     ml "Well, take care on your next journey, boys."
 
+    hide merlin
+    hide edgar
     "With the help of the Merlin’s map, the three of you make your way to Savanna Forest."
 
     "After a long and gruelling journey, you, Darrick, and Edgar find yourselves at the entrance of a large plaza."

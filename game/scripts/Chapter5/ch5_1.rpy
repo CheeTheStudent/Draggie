@@ -113,7 +113,7 @@ label ch5_1:
     show darrick worried
     with moveinright
 
-    dr "MC! Are you alright? I saw you fall.."
+    dr "[mc]! Are you alright? I saw you fall.."
 
     mc "No, I mean, yes I did fall, but I... I'm alright... I feel amazing!"
 
@@ -199,7 +199,7 @@ label ch5_1:
 
     "Edgar summons black flames onto his hands, preparing to strike you."
     
-    $scores = 200
+    # $score = scores
     
     if scores < 200:
         jump ending_bad
