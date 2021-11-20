@@ -7,8 +7,8 @@ label ch3_1:
     # "1 year later…"
     scene merlin_office
 
-    show merlin:
-        ypos 0.01
+    show merlin at left:
+        ypos 1.1
         
     "Early in the morning, you meet with Merlin."
 
