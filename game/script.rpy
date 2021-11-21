@@ -51,7 +51,11 @@ label start:
     show screen gameStats
     call ch4_1
     
-
+    call chapter_splash_screen(5)
+    show screen gameStats
+    call ch5_1
+  
+    call scene_transition_title('The End')
 
     # This ends the game.
 

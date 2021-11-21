@@ -46,3 +46,27 @@ transform rotation_slow:
   rotate 0
   linear 30.0 rotate 360 #linear to change speed
   repeat
+
+transform moveout_left:
+  subpixel True
+  easein 0.5 offscreenleft
+
+transform attack_left:
+  subpixel True
+  offscreenright
+  easein 0.5 offscreenleft
+
+transform attack_center:
+  subpixel True
+  xalign .5 yalign .5
+  zoom 1.4
+  linear 0.30 zoom 0.3
+  alpha 0
+
+transform attack_mc(pos=0.5):
+  subpixel True
+  xalign pos yalign .5
+  zoom 1
+  linear 0.20 zoom 1.7
+  alpha 0
+  
