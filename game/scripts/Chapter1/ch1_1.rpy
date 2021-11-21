@@ -1,6 +1,5 @@
 # We can divide each chapter into a few sections based on each scene.
 #This scene will be the MC's dream and finding out about MC's grandma.
-define g = Character("Grandma") 
 
 label ch1_1:
 
