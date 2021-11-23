@@ -2,7 +2,6 @@ label ch3_2:
 
     play sound "audio/TheNextDay.mp3"
     call scene_transition_title('The next day...')
-    # "The next day"
 
     scene rest forest
 
@@ -11,8 +10,7 @@ label ch3_2:
 
     show edgar at left
     with move
-    show darrick at right with dissolve:
-        ypos 1.1
+    show darrick at right with dissolve
 
     menu:
 
@@ -35,7 +33,7 @@ label ch3_2:
 
         b "...yes, please."
 
-        "The boy gets the bread and stares at both of you."
+        "The boy takes the bread and stares at both of you."
 
         jump ch3_boy_cont
 
@@ -49,7 +47,7 @@ label ch3_2:
     
     label ch3_boy_cont:
 
-        dr ".... [mc], am I looking weird?"
+        dr ".... [mc], is there something on my face?"
 
         mc "Huh? No. Why do you ask?"
 
@@ -59,7 +57,7 @@ label ch3_2:
         mc "Not just you. He’s staring at me too."
 
         show darrick
-        dr "Oh ya? ...oh, oh, okay."
+        dr "Oh, is that right? ...Oh, oh, okay."
 
         "..."
 
@@ -67,7 +65,7 @@ label ch3_2:
 
         b "Who are you?"
 
-        mc "Don’t you think it’s better to tell yours before asking for others?"
+        mc "Don’t you think it’s better to introduce yourself first?"
 
         dr "Yes, that’s right, I agree."
 
@@ -75,9 +73,9 @@ label ch3_2:
 
         "After some time, the boy starts introducing himself."
 
-        b "I only remember that my name is Edgar. I don’t remember anything else."
+        b "I only remember my name is Edgar. I can't recall anything else."
 
-        dr "I am Darrick, and [he] is [mc]. So, why are you here unconsciously?"
+        dr "I'm Darrick, and [he]'s [mc]. So, why were you here, unconscious on the ground?"
 
         mc "He already said he doesn't remember anything."
 
@@ -85,13 +83,12 @@ label ch3_2:
 
         mc "Then, why are you asking again?"
         
-        show darrick angry
+        show darrick worried
         dr "I… just… Okay, fine."
 
         show darrick
-        "Edgar smiles."
 
-        ed "Well, what are you doing out here?"
+        ed "Well, what are you two doing out here?"
 
         dr "We are heading to Elysium. Do you want to follow us?"
 
@@ -103,14 +100,16 @@ label ch3_2:
 
         hide edgar
         hide darrick
+        with dissolve
 
         scene mansion
+        with dissolve
 
-        "So you and your friends continue your journey and reach the mansion of Dragons in Elysium."
+        "You and your friends continue your journey and reach Elysium, the mansion of Dragons."
 
         menu:
 
-            mc "Wow, this is something beyond my _____ ."
+            mc "Wow, this is beyond my _____ ."
 
             "imaginations":
                 $renpy.fix_rollback()
@@ -128,8 +127,9 @@ label ch3_2:
         show darrick at left
         with move
         show edgar at right with dissolve
-        ed "...[mc], I think we can leave him here."
+        ed "...[mc], I think we should just leave him here..."
 
+        show darrick grin
         dr "Hey! You made a joke! You’re one of us now!"
 
         mc "Welcome to the gang."
@@ -148,6 +148,7 @@ label ch3_2:
                 $renpy.fix_rollback()
 
         scene inside mansion
+        with dissolve
 
         menu:
             "Prank Darrick.":
@@ -158,7 +159,7 @@ label ch3_2:
 
         label ch3_prank_darrick:
 
-            mc "Watch out, someone is behind you!"
+            mc "Watch out, there's someone behind you!"
 
             show darrick surprised
             dr "Oh my god, where!!??"
@@ -167,10 +168,14 @@ label ch3_2:
     
             "Darrick looks up and trips on the uneven ground."
 
-            show darrick angry
-            dr "Ouch! That hurts!"
+            show darrick worried at left
+            with move
+            dr "Ouch! That hurt!"
 
-            "You and Edgar laugh, watching Darrick pout on the ground." #(Edgar smile)
+            show edgar smile at right
+            with dissolve
+
+            "You and Edgar laugh, watching Darrick pout on the ground."
 
             "Darrick gets up and storms away, pretending to be mad."
 
@@ -185,7 +190,7 @@ label ch3_2:
             show darrick surprised
             dr "Phew, thanks for the heads up!"
 
-            mc "You are welcome."
+            mc "You're welcome."
 
             jump ch3_darrick_cont2
 
@@ -208,8 +213,11 @@ label ch3_2:
                     $ scores += 10 
 
             scene stairs
+            with dissolve
 
-            show darrick surprised
+            show darrick worried at left
+            show edgar at right
+            with dissolve
             dr "It’s so scary down here… Hold me."
 
             "You and Edgar ignore Darrick and continue walking down the stairs."
@@ -222,10 +230,12 @@ label ch3_2:
             "In front of you, you notice a bright, red light coming from the end of the stairs."
 
             scene red light
+            with dissolve
 
             mc "Guys, something is in front."
 
             scene far blur crystal
+            with dissolve
 
             menu:
 
@@ -241,11 +251,13 @@ label ch3_2:
                 "admitted":
                     $renpy.fix_rollback()
 
-            show darrick surprised
+            show darrick surprised at left
+            with dissolve
             dr "Woah, what do you think that is?"
             
             mc "I have no idea. Let’s take a closer look."
             hide darrick
+            with dissolve
 
             scene blur crystal
             with eyes_awake
@@ -256,9 +268,8 @@ label ch3_2:
 
             "You reach your hand out and look towards Darrick for reassurance."
 
-            show darrick
+            show darrick at left
+            with dissolve
             mc "Should I?"
 
             "Darrick nods his head in agreement, and without a second thought, you wrap your fingers around the crystal."
-
-            hide edgar

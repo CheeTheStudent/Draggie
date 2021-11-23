@@ -4,7 +4,7 @@ label ending_good:
 
   mc "It doesn’t have to end like this!"
 
-  ed "You left me no choice, child."
+  ed "You left me no choice, [mc]."
 
   ed "This world is ruined, and all the people who dwell here are destroying it."
 
@@ -85,7 +85,7 @@ label ending_good:
 
   ed "With that much potential, you could rule the world too, you know."
 
-  mc "Nah, that’s too much of a responsibility for me to handle. Just promise me you will never do it again."
+  mc "No way... That’s too much of a responsibility for me to handle. Just promise me you will never do it again."
 
   ed "You did beat me, after all."
 
@@ -99,7 +99,7 @@ label ending_good:
 
   ed "I..."
 
-  "You come to your senses and realise that because you channelled your power into the teardrop, the last blast you had shot at Edgar was amplified."
+  "You realise that because you channelled your power into the teardrop, the last blast you had shot at Edgar was amplified."
 
   "Edgar’s life had been seeping away from the moment you fired the blast."
 
@@ -159,7 +159,9 @@ label ending_best:
 
   ed "Tell me, what do you mean that the dragons ‘didn’t mean to banish me like that'?"
 
-  mc "They only did what’s best for humanity then. You had wreaked too much havoc, and it was all the dragons could do to prevent worse from happening."
+  mc "They only did what’s best for humanity then."
+  
+  mc "You had wreaked too much havoc, and it was all the dragons could do to prevent worse from happening."
 
   mc "Listen to me. You have been given one more chance. Take it and change for the better."
 
@@ -173,7 +175,7 @@ label ending_best:
 
   mc "Listen, Edgar, the fight that took place 10 years ago was 10 years ago! Do you even have any concept of time?"
 
-  ed "Hmmm... You are right. I am the Demon King after all, time was always irrelevant to me."
+  ed "Hmmm... You are right. I am the Demon King after all, time has always been irrelevant to me."
 
   "Darrick nods in agreement."
 
@@ -181,7 +183,7 @@ label ending_best:
 
   pause(1)
 
-  ed "Very well then. I hope you can talk some sense into your people."
+  ed "Very well then... I hope you can talk some sense into your people."
 
   ed "Just know that if anyone ever tries to start the same thing that happened 10 years ago, I will be the first to execute them."
 

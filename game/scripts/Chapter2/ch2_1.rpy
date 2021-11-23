@@ -56,7 +56,7 @@ label  ch2_be_polite_to_stranger:
 
     "You turn back and spot a stranger standing behind you, grinning."
     
-    "You are stunned and ask the stranger."
+    "You are taken aback."
 
     jump ch2_both_cont
 
@@ -67,6 +67,7 @@ label  ch2_be_hostile_towards_stranger:
     "Because you ignored them, the person moves in front of you, blocking your way."
 
     show darrick
+    with moveinright
 
     sg "Hey! I’m talking to you."
 
@@ -117,7 +118,7 @@ label ch2_both_cont:
             $renpy.fix_rollback()
     
     hide darrick
-    with dissolve
+    with moveoutleft
 
     menu:
         "On the way to the inn, you take a short break to quench your thirst. When you _____ up, the stranger is gone from your sight." 
@@ -184,6 +185,7 @@ label ch2_both_cont:
     dr "Hmmm, tell me more about that later."
 
     hide darrick
+    with dissolve
     scene inn
     with dissolve
 
@@ -232,7 +234,7 @@ label ch2_both_cont:
 
     "You are in awe at the sight of the force field that Darrick produced."
 
-    "However, you notice the force field you encountered had a red tint to it as compared to the blue tint of Darrick’s force field."
+    "However, you notice the force field you encountered was red compared to Darrick’s blue force field."
     
     menu:
         "You _____ that thought up to Darrick."
@@ -273,7 +275,7 @@ label ch2_both_cont:
 
 label nod_in_agreement:
 
-    "Excitedly, you nod in agreement to Darrick’s statement."
+    "Excitedly, you nod in agreement."
     
     mc "I would love to meet the Guild Master!"
 
@@ -290,9 +292,9 @@ label nod_in_agreement:
             $renpy.fix_rollback()
             $ scores += 10
 
-    mc "Ohhhh alright, makes sense to me. Anyway, What's for dinner?"
+    mc "Very well. What's for dinner?"
 
-    dr "Porridge, that okay?"
+    dr "Porridge, is that okay?"
 
     menu:
         "Suddenly, you are_____ with a rush of memories as your grandma used to make your porridge every day, and it was your absolute favourite meal."
@@ -309,7 +311,7 @@ label nod_in_agreement:
 
     mc "Don't worry, it's delicious. It tastes just like grandma’s."
 
-    "Both you and Darrick have a filling dinner and hit the hay, a well deserved rest after a long day."
+    "Both you and Darrick have a filling dinner."
 
     jump ch2_2_cont
 
@@ -334,13 +336,15 @@ label feeling_doubtful:
         "You are ______ to see if this Guild Master can actually help you solve your doubts."
 
         "eager":
-                $renpy.fix_rollback()
-                $ scores += 10
+            $renpy.fix_rollback()
+            $ scores += 10
         "eagle":
             $renpy.fix_rollback()
         "eagar":
             $renpy.fix_rollback()
 
-    dr "Now I see that you're excited to meet the Guild Master. We shall leave tomorrow as it's already late. Let’s get some rest after dinner."
+    dr "Now I see that you're excited to meet the Guild Master."
+    
+    dr "We shall leave tomorrow as it's already late. Let’s get some rest after dinner."
 
     jump ch2_2_cont

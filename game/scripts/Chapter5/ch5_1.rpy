@@ -51,7 +51,7 @@ label ch5_1:
 
     ed "I... I'm feeling a little bit dizzy. So you guys go on without me. I'll catch up later."
 
-    dr "MC, I'll stay here with Edgar. You can explore the plaza first."
+    dr "[mc], I'll stay here with Edgar. You can explore the plaza first."
 
     mc "Are you sure?"
 
@@ -64,11 +64,11 @@ label ch5_1:
     with dissolve
     scene plaza inside
 
-    "You walk into the plaza alone, drawn by how beautiful the structure is or used to be."
+    "You walk into the plaza alone, drawn by how beautiful the structure is... or used to be."
 
-    mc "This place must have held many people before it was abandoned.."
+    mc "{i}This place must have held many people before it was abandoned...{/i}"
 
-    mc "The teardrop must be here somewhere.."
+    mc "{i}The teardrop must be here somewhere..{/i}"
 
     menu:
         "As you walk _____ into the plaza, you feel warm air coming from the centre."
@@ -81,13 +81,13 @@ label ch5_1:
             $renpy.fix_rollback()
             $ scores += 10
 
-    mc "That's weird. It feels like there's a fire nearby."
+    mc "{i}That's weird. It feels like there's a fire nearby.{/i}"
 
-    mc "It could be the teardrop! I better follow it."
+    mc "{i}It could be the teardrop! I better follow it.{/i}"
 
     "As you walk closer to the centre, the air gets warmer and warmer."
 
-    mc "There's nothing -"
+    mc "{i}There's nothing -{/i}"
 
     show crystal at center with dissolve:
         ypos 0.6
@@ -106,7 +106,7 @@ label ch5_1:
 
     "You fall to the ground as soon as your hand wraps around the teardrop. Your head starts hurting."
 
-    mc "My head.. it hurts so much... What's going on?"
+    mc "{i}My head.. it hurts so much... What's going on?{/i}"
 
     "As quickly as it comes, the pain leaves, and you feel something change within you."
 
@@ -174,7 +174,7 @@ label ch5_1:
     hide magic
     show edgar hurt tattoo
 
-    mc "Wait- What? How did I do that?"
+    mc "{i}Wait- What? How did I do that?{/i}"
 
     ed "You killed my people! I'll make you pay!"
 
@@ -186,20 +186,26 @@ label ch5_1:
 
     ed "You're the child of the last two dragons. The dragons who defeated me ten years ago.."
 
-    mc "Defeated you? Edgar... What do you mean? You were only a child ten years ago. How could dragons have fought with you?"
+    mc "Defeated you? Edgar... What do you mean? You were only a child ten years ago."
+    
+    mc "How could dragons have fought with you?"
 
-    ed "I am no child, MC, and neither are you. Coming to this place restored my memories. This was where the fight happened.. The fight between the dragons and me." 
+    ed "I am no child, [mc], and neither are you. Coming to this place restored my memories."
+    
+    ed "This was where the fight happened.. The fight between the dragons and me." 
 
-    ed "I am Edgar, the Demon King of the Underworld. I was reborn after your parents banished me from this world ten years ago."
+    ed "I am Edgar, the Demon King of the Underworld."
+    
+    ed "I was reborn after your parents banished me from this world ten years ago."
 
-    ed "And you... You are their only child, the last dragon... So you have to pay for what they have done."
+    ed "And you... You are their only child, the last dragon... 
+    
+    ed "So you have to pay for what they have done."
 
     show magic black full at rotation_slow
     with dissolve
 
     "Edgar summons black flames onto his hands, preparing to strike you."
-    
-    # $score = scores
     
     if scores < 200:
         jump ending_bad
@@ -222,24 +228,30 @@ label ending_bad:
 
     ed "All you believe is what people say, huh? Do you even know why I did all those things?"
 
-    mc "I.. I am sure there's no good reason for killing thousands of innocent people. You should be thankful you have a second chance to live after what you did."
+    mc "I.. I am sure there's no good reason for killing thousands of innocent people."
+    
+    mc "You should be thankful you have a second chance to live after what you did."
 
-    ed "You know nothing, MC. This world is corrupted, and I am the only one who can fix it."
+    ed "You know nothing, [mc]. This world is corrupted, and I am the only one who can fix it."
 
     mc "And how are you going to do that?"
 
-    ed "By killing as many people as I have to. All who listen to my commands will be spared. It will be a peaceful world with a good leader."
+    ed "By killing as many people as I have to. All who listen to my commands will be spared. 
+    
+    ed "It will be a peaceful world with a good leader."
 
     mc "That's crazy, Edgar. Lives are not for us to take."
 
-    ed "I think I can decide that for myself, MC."
+    ed "I think I can decide that for myself, [mc]."
 
     show edgar tattoo
     hide magic with dissolve
 
-    ed "However, I shall spare your life. You and Darrick have been.. good to me. I may be cruel, but I know when to be grateful."
+    ed "However, I shall spare your life. You and Darrick have been.. good to me."
+    
+    ed "I may be cruel, but I know when to be grateful."
 
-    ed "This time, I'll let you two go. But if I ever see you again, MC, don't expect me to be so kind."
+    ed "This time, I'll let you two go. But if I ever see you again, [mc], don't expect me to be so kind."
 
     hide edgar tattoo with dissolve
 
@@ -266,7 +278,9 @@ label ending_bad:
 
     dr "But.. What are we going to do about Edgar? I mean, the Demon King... Is he planning to conquer the world?"
 
-    mc "I don't know, Darrick. The best we can do now is prepare for the worst. If he is as dangerous as they say, I don't know if we can stop him."
+    mc "I don't know, Darrick. The best we can do now is prepare for the worst."
+    
+    mc "If he is as dangerous as they say, I don't know if we can stop him."
 
     mc "I wish I did a better job at convincing Edgar to stay. He was such an innocent guy, and I'm sure there's good in him.."
 
@@ -281,7 +295,7 @@ label ending_bad:
     scene black
     with dissolve
 
-    mc "I don't think this is something we can fix."
+    mc "{i}I don't think this is something we can fix.{/i}"
 
 
 

@@ -4,9 +4,7 @@ label ch3_1:
     
     call scene_transition_title('1 year later...')
     
-    # "1 year later…"
     scene merlin_office
-
     show merlin at left:
         ypos 1.1
         
@@ -23,13 +21,15 @@ label ch3_1:
         "thought":
             $renpy.fix_rollback()
         
-        "am thinking":
+        "thinks":
             $renpy.fix_rollback()
 
-    ml "The Mansion of Dragons mentioned in the documentary you found?"
+    ml "The Mansion of Dragons mentioned in the books you've read?"
+
+    mc "Yes. I have been here in Olympus for a year... I know that my powers are different from everyone else's."
 
     menu:
-        mc "Yes. I have been here in Olympus for a year, and I know that my power is different from everyone else's. I want ______ to who I am and if possible… I might find my parents there."
+        mc "I want ______ to who I am and if possible… I want to find my parents."
 
         "answers":
             $renpy.fix_rollback()
@@ -43,22 +43,23 @@ label ch3_1:
 
     hide merlin
     
-    show darrick at right with dissolve
+    show darrick at right
+    with moveinright
 
-    "Suddenly, Darrick breaks the door and shouts."
+    "Suddenly, Darrick breaks open the door and shouts."
 
     dr "I’m coming with you!"
 
     show merlin angry at left:
         ypos 1.1
 
-    ml "Darrick! How many times do I have to tell you? Knock on the door first before you come in!" 
+    ml "Darrick! How many times do I have to tell you? Knock before you come in!" 
 
     menu:
 
         "Merlin yells _____ Darrick."
 
-        "towards":
+        "at":
             $renpy.fix_rollback()
             $ scores += 10
 
@@ -71,12 +72,12 @@ label ch3_1:
     show darrick grin
     dr "Haha, I’m sorry, I’ll watch out next time."
 
-    hide merlin angry
+    show merlin
 
     show darrick
     dr "[mc], I’m going with you. You can’t leave me behind, and I’m your best partner!"
 
-    mc"Alright, alright, I will never stop you from following me… Hmm, we need to prepare before leaving. So, we are leaving tomorrow."
+    mc"Alright, alright, I will never leave you behind... We are leaving tomorrow so let's make some preparations first."
 
     show darrick grin
     dr "Yes, Sir!"
@@ -92,7 +93,7 @@ label ch3_1:
         ypos 1.1
     show darrick at right
     menu:
-        ml "Be careful on your _____."
+        ml "Be careful on your _____. Look out for each other."
 
         "journy":
             $renpy.fix_rollback()
@@ -104,19 +105,19 @@ label ch3_1:
             $renpy.fix_rollback()
             $ scores += 10
 
-    mc "Take care, Sir."
+    mc "We will, and you take care too, Master."
 
-    dr "Take care, old man."
+    dr "Yeah, take care, old man."
 
-    "You and Darrick walk away while waving hand."
+    "You and Darrick walk away while waving goodbye to Merlin."
     
-    dr "Bye~"
+    dr "Goodbye!"
     
-    call scene_transition_title('On the way to Elysium')
+    call scene_transition_title('On the way to Elysium...')
 
     scene forest2
 
-    show darrick angry
+    show darrick worried
     dr "[mc], are we gonna rest? It’s almost night, I’m so tired and hungry."
 
     menu:
@@ -135,16 +136,16 @@ label ch3_1:
         jump ch3_darrick_cont
 
     label ch3_rest:
-        mc "Ok then, let’s find a place to have a rest, and we will continue our journey tomorrow. Sounds good for you?"
+        mc "Ok then, let’s find a place to have a rest, and we will continue our journey tomorrow. Sounds good to you?"
 
         show darrick
-        dr "Yes!!! Finally I get to rest for such a long walk."
+        dr "Yes!!! Finally, I get to rest after such a long walk."
 
         jump ch3_darrick_cont
 
     label ch3_darrick_cont:
 
-        "Suddenly, you stop."
+        "Suddenly, you stop in your tracks."
 
         show darrick surprised
         dr "What’s the matter?"
@@ -161,31 +162,31 @@ label ch3_1:
             "stop":
                 $renpy.fix_rollback()
         
-            "clear":
+            "cure":
                 $renpy.fix_rollback()
                 $ scores += 10
             
             "solve":
                 $renpy.fix_rollback()
 
-        "Both of you are preparing to fight."
+        "Both of you prepare to fight."
 
-        "Demons run away…"
+        "The demons run away."
 
         dr "...Ahh, that’s it? Hey, demons! Come back!" 
         
-        "Run to chase the demons, but he stops."
+        "Darrick runs to chase the demons, but suddenly stops."
 
         mc "Darrick?"
 
         scene rest forest
 
         show darrick surprised
-        dr "Woah, [mc], there’s a boy here, still breathing!"
+        dr "Woah, [mc], there’s a boy here on the ground... He's still breathing!"
 
-        mc "Is he hurt or something?"
+        mc "Is he hurt?"
 
         show darrick
-        dr "Nope. He looks fine but just unconscious."
+        dr "Nope. He looks fine, just unconscious."
 
-        mc "Okay, we rest here today and find out who he is tomorrow."
+        mc "Okay, let's rest here today and find out who he is tomorrow."

@@ -24,6 +24,8 @@ label start:
             $ His = "Her"
             $ boy = "girl"
             $ Boy = "Girl"
+            $ son = "daughter"
+            $ Son = "Daughter"
 
         "Male":
             pass

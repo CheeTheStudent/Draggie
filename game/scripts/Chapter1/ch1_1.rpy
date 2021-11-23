@@ -8,16 +8,13 @@ label ch1_1:
 
   menu:
      
-    "10 years ago, a demon king was _____ into the world."
+    "10 years ago, a Demon King was _____ into the world."
 
     "birth":
 
       $ renpy.fix_rollback() # This is to prevent users changing answers
       
-      play sound "audio/studios_0001.mp3"
-      "This is the wrong answer. Choosing wrong answers will deduct your scores." (what_color="#cc8888")
-      play sound "audio/studios_0003.mp3"
-      "Your scores won't be deducted now, but it will the next time!" (what_color="#cc8888")
+      "This is the wrong answer. Choosing wrong answers won't increase your scores." (what_color="#cc8888")
 
     "born": 
 
@@ -29,10 +26,8 @@ label ch1_1:
 
   "So think twice before answering! Now, on with the story!" (what_color="#8c8")
 
-  play sound "audio/studios_0005.mp3"
   "The Demon King was a cruel and evil being who showed no mercy."
   
-  play sound "audio/studios_0004.mp3"
   "He burned villages and cities down to ashes, and killed thousands of people."
   
   "At that time, the last two remaining dragons stepped up to fight against the Demon King to save the world from being slaughtered."
@@ -49,6 +44,7 @@ label ch1_1:
     "accident":
       $ renpy.fix_rollback()
 
+  stop sound
   call scene_transition_title('Present day')
 
   "You find yourself facing two blurry unfamiliar figures in the fog."
@@ -99,10 +95,10 @@ label ch1_1:
 
   stop sound
   scene kitchen
+  play sound "audio/DoorSqueak.mp3"
 
   "You make your way downstairs towards the dining area to have breakfast but notice the empty table."
   
-  play sound "audio/DoorSqueak.mp3"
   mc "{i}That’s odd… I wonder where grandma is...{/i}"
 
   "You have been living with grandma for as long as you can remember."

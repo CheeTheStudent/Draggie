@@ -39,7 +39,7 @@ label ch1_2:
 
   hide grandma
   with fade
-  "Grandma closes her eye and you feels her pulse beating slowly to a stop."
+  "Grandma closes her eyes and you feels her pulse beating slowly to a stop."
 
   "Your eyes fill up with tears, trying to process what happened."
 
@@ -62,17 +62,17 @@ label ch1_2:
 
   "A couple of weeks have passed since the death of your grandma."
 
-  "From your mother's letter, you know that as long as you grow up and become stronger, you can know where your parents are."
+  "From your mother's letter, you know that as long as you grow up and become stronger, you might find out about who your parents were."
 
-  "You also remembered your dream."
+  "You think of your dream."
 
-  mc "Beware of the black flame..."
+  mc "{i}Beware of the black flame...{/i}"
 
-  mc "I need to grow stronger to find out the truth!"
+  mc "{i}I need to grow stronger to find out the truth!{/i}"
 
   "You have been sheltered by grandma for the majority of your life."
 
-  "You have now decided to get out of your comfort zone and explore the city to gain new knowledge and become stronger."
+  "You decide to get out of your comfort zone and explore the city to gain new knowledge and become stronger."
 
   menu:
       "You live in the mountains. In order to _____ into the city, you need to cross a forest."
